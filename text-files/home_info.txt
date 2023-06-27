@@ -1,0 +1,27 @@
+(Navigation bar)
+- About us
+- Menu
+- Contact
+- Location
+- FAQ
+
+
+Welcome to Crystal Thai!
+
+Your local family-owned Thai restaurant.
+
+We are located in Owings Mills, MD on the lower level of the Valley Village Shopping Center on Reisterstown Rd.
+
+Business Hours:
+    Monday: Closed
+    Tuesday - Thursday:
+        - Lunch: 12:00 - 3:00 PM
+        - Dinner: 4:30 - 8:30 PM
+    Saturday: 4:30 - 9:00 PM
+    Sunday: 4:30 - 8:30 PM
+
+Note: Seating ends 30 minutes before closing.
+
+Come dine-in with us!
+
+Copyright (C) Tathawee Inc. 2023
