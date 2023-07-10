@@ -48,6 +48,11 @@ a:hover {
     gap: 100px;
 }
 
+.content-pages {
+    width: 1000px;
+    align-self: center;
+}
+
 .header {
     font-size: 36px;
     font-weight: bold;
@@ -71,8 +76,40 @@ a:hover {
     align-items: center;
 }
 
-.hours {
+.subheader {
     text-decoration: underline;
+    font-weight: bold;
+}
+
+.phone {
+    font-size: 36px;
+}
+
+.special {
+    border-top: 5px solid brown;
+    text-align: center;
+}
+
+.hyperlink-uber {
+    color: brown;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.hyperlink-grub {
+    color: brown;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.hyperlink-uber:hover {
+    color: #028d20;
+    font-size: 25px;
+}
+
+.hyperlink-grub:hover {
+    color: orange;
+    font-size: 25px;
 }
 
 .note {
@@ -100,9 +137,24 @@ li {
     margin-left: 30px;
 }
 
+.press-me {
+    padding:  20px;
+    border-radius: 50px;
+    border: none;
+    background-color: orange;
+    box-shadow: 5px 5px 10px brown;
+}
+
+.map {
+    color: brown;
+    font-weight: normal;
+    text-decoration: solid underline;
+}
+
 .image {
     width: auto;
     height: 600px;
+    border-radius: 20px;
 }
 
 .copyright {
