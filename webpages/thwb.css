@@ -144,17 +144,62 @@ li {
 
 /*   -----------------------------------------------   */
 
-/*   Styling for menu.html   */
+/*   Styling for menu.html, lunch.html, dinner.html, catering.html   */
 
-select {
-
+.align-text {
+    display: flex;
 }
 
-select:hover {
+.dropbox {
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    font-size: 25px;
+}
+
+.option:hover {
+    background-color: orange;
 }
 
 option[value=""] {
     color: gray;
+    text-align: center;
+}
+
+
+.diff-menu {
+    color: orange;
+    font-size: 20px;
+}
+
+#categories {
+    font-size: 20px;
+}
+
+.food {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 950px;
+    height: 800px;
+}
+
+.item {
+    width: 400px;
+    height: 100px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 18px;
+    color: black;
 }
 
 /*   -----------------------------------------------   */
