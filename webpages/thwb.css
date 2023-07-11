@@ -1,3 +1,6 @@
+
+/*   Styling for all webpages   */
+
 body {
     background-color: orange;
     background-image: url(../Images/ORWH.jpg);
@@ -19,14 +22,14 @@ body {
     margin-right: 20px;
 }
 
-a {
+.links {
     font-size: 25px;
     font-weight: 1000;
     color: white;
     text-decoration: none;
 }
 
-a:hover {
+.links:hover {
     color: brown;
     text-decoration: underline double;
 }
@@ -40,17 +43,6 @@ a:hover {
     margin-bottom: 100px;
     margin-top: 50px;
     
-}
-
-.content {
-    display: flex;
-    margin: 0px 100px;
-    gap: 100px;
-}
-
-.content-pages {
-    width: 1000px;
-    align-self: center;
 }
 
 .header {
@@ -76,51 +68,41 @@ a:hover {
     align-items: center;
 }
 
+.copyright {
+    background-color: orange;
+    color: white;
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+}
+
+
+/*   -----------------------------------------------   */
+
+/*   Styling for all webpages except index.html   */
+
+.content-pages {
+    width: 1000px;
+    align-self: center;
+}
+
+
 .subheader {
     text-decoration: underline;
     font-weight: bold;
 }
 
-.phone {
-    font-size: 36px;
-}
+/*   -----------------------------------------------   */
 
-.special {
-    border-top: 5px solid brown;
-    text-align: center;
-}
-
-.hyperlink-uber {
-    color: brown;
-    font-size: 20px;
-    text-decoration: underline;
-}
-
-.hyperlink-grub {
-    color: brown;
-    font-size: 20px;
-    text-decoration: underline;
-}
-
-.hyperlink-uber:hover {
-    color: #028d20;
-    font-size: 25px;
-}
-
-.hyperlink-grub:hover {
-    color: orange;
-    font-size: 25px;
-}
+/*   Styling for multiple webpages   */
 
 .note {
     margin-top: 5px;
     font-size: 18px;
-}
-
-.come {
-    font-size: 32px;
-    font-weight: bold;
-    color: orangered;
 }
 
 .color {
@@ -137,18 +119,21 @@ li {
     margin-left: 30px;
 }
 
-.press-me {
-    padding:  20px;
-    border-radius: 50px;
-    border: none;
-    background-color: orange;
-    box-shadow: 5px 5px 10px brown;
+/*   -----------------------------------------------   */
+
+/*   Styling for index.html   */
+
+.content {
+    display: flex;
+    margin: 0px 100px;
+    gap: 100px;
+    align-items: flex-end;
 }
 
-.map {
-    color: brown;
-    font-weight: normal;
-    text-decoration: solid underline;
+.come {
+    font-size: 32px;
+    font-weight: bold;
+    color: orangered;
 }
 
 .image {
@@ -157,14 +142,76 @@ li {
     border-radius: 20px;
 }
 
-.copyright {
-    background-color: orange;
-    color: white;
-    font-style: italic;
-    font-size: 25px;
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-top: 100px;
+/*   -----------------------------------------------   */
+
+/*   Styling for menu.html   */
+
+select {
+
 }
+
+select:hover {
+}
+
+option[value=""] {
+    color: gray;
+}
+
+/*   -----------------------------------------------   */
+
+/*   Styling for contact.html   */
+.phone {
+    font-size: 36px;
+}
+
+.border-top {
+    border-top: 5px solid brown;
+    text-align: center;
+}
+
+.hyperlink{
+    color: brown;
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.uber:hover {
+    color: #028d20;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.grub:hover {
+    color: orange;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+/*   -----------------------------------------------   */
+
+/*   Styling for location.html   */
+
+.map {
+    color: brown;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    padding:  20px;
+    border-radius: 50px;
+    border: none;
+    background-color: orange;
+    box-shadow: 5px 5px brown;
+}
+
+.map:hover {
+    color: white;
+}
+
+.align-center {
+    text-align: center;
+}
+
+/*   -----------------------------------------------   */
+

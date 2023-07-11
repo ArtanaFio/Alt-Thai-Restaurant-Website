@@ -7,19 +7,32 @@
     </head>
     <body>
         <p class="navigation">
-            <span class="links"><a href="index.html">Home</a></span>
-            <span class="links"><a href="about.html">About Us</a></span>
-            <span class="links"><a href="contact.html">Contact</a></span>
-            <span class="links"><a href="location.html">Location</a></span>
-            <span class="links"><a href="faq.html">FAQ</a></span>
+            <span><a class="links" href="index.html">Home</a></span>
+            <span><a class="links" href="about.html">About Us</a></span>
+            <span><a class="links" href="contact.html">Contact</a></span>
+            <span class="links"><a class="links" href="location.html">Location</a></span>
+            <span><a class="links" href="faq.html">FAQ</a></span>
         </p>
         <img class="title-image" src="../Images/Clear CT Logo.png" alt="Crystal Thai: Authentic Thai Cuisine">
         <div class="content-pages">
             <h1 class="header">Menu</h1>
             <div class="text">
-                <h2>Lunch Menu</h2>
-                <h2>Dinner Menu</h2>
-                <h2>Catering Menu</h2>
+                <em class="align-center">Please note that the lunch menu 
+                    is only available Tuesday through Thursday <br>from 12 
+                    to 3 pm while the dinner menu is available during all 
+                    business hours.</em>
+                <br>
+                <br>
+                <div class="dropbox">
+                    <p>Select your menu:</p>
+                    <!--<label for="menu">Select your menu</label>-->
+                        <select id="menu">
+                            <option value="">OPTIONS</option>
+                            <option value="Lunch Menu">Lunch</option>
+                            <option value="Dinner Menu">Dinner</option>
+                            <option value="Catering">Catering</option>
+                        </select>
+                </div>
             </div>
         </div>
         <div class="copyright">
