@@ -285,3 +285,17 @@ option[value=""] {
 
 /*   -----------------------------------------------   */
 
+/*   Styling for faq.html   */
+
+.detail {
+    font-size: 25px;
+    color: brown;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    opacity: 0.85;
+    border-radius: 20px;
+    padding: 40px;
+    align-items: left;
+}
+
