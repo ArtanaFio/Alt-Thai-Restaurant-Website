@@ -5,27 +5,35 @@
         <title>Crystal Thai - Menu</title>
         <link rel="stylesheet" href="thwb.css">
         <style>
+            .content-pages {
+                width: 1500px;
+                align-self: center;
+            }
             .top-section {
                 text-align: center;
+                width: 1000px;
             }
 
             .food {
                 display: flex;
                 flex-direction: column;
-                flex-wrap: wrap;
-                gap: 70px;
-                width: 950px;
-                height: 400px;
                 align-items: center;
+                flex-wrap: wrap;
+                gap: 50px;
+                width: 1500px;
+                height: 1000px;
+                align-items: center;
+                border: 5px dotted teal;
             }
 
             .item {
                 width: 400px;
                 height: 150px;
+                border: 2px dotted magenta;
             }
         </style>
     </head>
-    <body class="dinner">
+    <body class="lunch">
         <p class="navigation">
             <span><a class="links" href="index.html">Home</a></span>
             <span><a class="links" href="about.html">About Us</a></span>
@@ -36,10 +44,12 @@
         </p>
         <img class="title-image" src="../Images/Clear CT Logo.png" alt="Crystal Thai: Authentic Thai Cuisine">
         <div class="content-pages">
-            <div class="header">Curries
-                <br><div class="note">All curries are served with quality white jasmine rice</div>
+            <div class="header">Entrees 
+                <br><div class="note">All entrees are served with quality white jasmine rice</div>
             </div>
             <br>
+        </div>
+        <div class="content-pages">
             <div class="text">
                 <em class="align-center">Please note that the lunch menu 
                     is only available Tuesday through Thursday <br>from 12 
@@ -60,44 +70,32 @@
                         <p class="diff-menu" >Select your category:</p>
                         <select id="categories" onchange="window.location.href=this.value;">
                             <option value="">Categories</option>
-                            <option value="D-appetizers.html">Appetizers</option>
-                            <option value="D-salads.html">Salads</option>
-                            <option value="D-soups.html">Soups</option>
-                            <option value="house-specialties.html">House Specialties</option>
-                            <option value="D-entrees.html">Entrees</option>
-                            <option value="curries.html">Curries</option>
-                            <option value="noodles-rice.html">Noodles & Fried Rice</option>
-                            <option value="D-desserts.html">Desserts</option>
-                            <option value="D-beverages.html">Beverages</option>
+                            <option value="L-appetizers.html">Appetizers</option>
+                            <option value="L-salads.html">Salads</option>
+                            <option value="L-soups.html">Soups</option>
+                            <option value="L-entrees.html">Entrees</option>
+                            <option value="L-desserts.html">Desserts</option>
+                            <option value="L-beverages.html">Beverages</option>
                         </select>
                     </div>
                 </div>
                 <br>
-                <div class="top-section">Curries with mixed vegetables or tofu are made vegan unless otherwise requested.
-                    <br>Cost of adding extra:
+                <div class="top-section">Items with mixed vegetables or tofu are made with vegan sauce unless otherwise requested.
+                    <br>Cost of adding:
                     <br><span class="note">Extra chicken or beef...$3.50</span>
                     <br><span class="note">Extra shrimp...$5.00</span>
                     <br><span class="note">Extra scallop...$6.00</span>
                     <br><span class="note">Extra tofu...$3.00</span>
                     <br><span class="note">Extra jasmine rice...$2.50</span>
-                    <br><span class="note">Extra curry sauce...$8.00</span>
+                    <br><span class="note">Extra egg...$1.25</span>
+                    <br><span class="note">Extra noodles $3.00</span>
                 </div>
                 <br>
                 <br>
                 <div class="food">
                     <div class="item">
-                        <div class="name">Red Curry</div>
-                        <p class="description">Red curry paste cooked in coconut milk with bell pepper, bamboo shoot, and sweet basil.</p>
-                        <ul class="protein">
-                            <li class="opt">Mixed Vegetables...$15.45</li>
-                            <li class="opt">Chicken OR Beef OR Tofu...$15.95</li>
-                            <li class="opt">Shrimp OR Scallop...$17.95</li>
-                        </ul> 
-                    </div>
-                    <div class="item">
-                        <div class="name">Green Curry</div>
-                        <p class="description">Green curry paste cooked in coconut milk with bell pepper, eggplant, and sweet basil. Subtly 
-                            spicier than the other curries.</p>
+                        <div class="name">Sesame Pineapple</div>
+                        <p class="description">Sautéed pineapple, onion, carrot, topped with roasted sesame seed.</p>
                         <ul class="protein">
                             <li class="opt">Mixed Vegetables...$15.45</li>
                             <li class="opt">Chicken OR Beef OR Tofu...$15.95</li>
@@ -105,9 +103,18 @@
                         </ul>
                     </div>
                     <div class="item">
-                        <div class="name">Panang Curry</div>
-                        <p class="description">Panang curry paste cooked in coconut milk with peanut sauce, crushed peanuts, bell pepper, sweet 
-                            basil, and kaffir leaves.</p>
+                        <div class="name">Crystal Thai Cashew</div>
+                        <p class="description">Sautéed onion, bell pepper, celery, carrot, and cashew nuts in our special brown sauce.</p>
+                        <ul class="protein">
+                            <li class="opt">Mixed Vegetables...$15.95</li>
+                            <li class="opt">Chicken OR Beef OR Tofu...$16.95</li>
+                            <li class="opt">Shrimp OR Scallop...$18.95</li>
+                        </ul>
+                        <p class="sub-description">*Add extra cashew nuts for $2.50</p> 
+                    </div>
+                    <div class="item">
+                        <div class="name">Pepper Perfect</div>
+                        <p class="description">Sautéed bell pepper, onion, carrot, and tomato in a tasty oyster sauce.</p>
                         <ul class="protein">
                             <li class="opt">Mixed Vegetables...$15.45</li>
                             <li class="opt">Chicken OR Beef OR Tofu...$15.95</li>
@@ -115,17 +122,42 @@
                         </ul>
                     </div>
                     <div class="item">
-                        <div class="name">Massaman Curry</div>
-                        <p class="description">Massaman curry paste cooked in coconut milk with potato, onions, and whole roasted peanuts.</p>
+                        <div class="name">Sweet and Sour</div>
+                        <p class="description">Sautéed pineapple, cucumber, tomato, bell pepper, onion, and carrot in our special house sauce.</p>
+                        <ul class="protein">
+                            <li class="opt">Mixed Vegetables...$15.45</li>
+                            <li class="opt">Chicken OR Beef OR Tofu...$15.95</li>
+                            <li class="opt">Shrimp OR Scallop...$17.95</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <div class="name">Tasty Ginger</div>
+                        <p class="description">Sautéed fresh ginger, onion, carrot, mushroom, and scallions in a brown sauce.</p>
                         <ul class="protein">
                             <li class="opt">Mixed Vegetables...$15.45</li>
                             <li class="opt">Chicken OR Beef OR Tofu...$15.95</li>
                             <li class="opt">Shrimp OR Scallop...$17.95</li>
                         </ul> 
+                    </div>
+                    <div class="item">
+                        <div class="name">Sweet Basil (Pad Ka Prao)</div>
+                        <p class="description">A popular Thai dish made of sautéed sweet basil, onion, and bell peppers in a brown sauce.</p>
+                        <ul class="protein">
+                            <li class="opt">Mixed Vegetables...$15.45</li>
+                            <li class="opt">Chicken OR Beef OR Tofu...$15.95</li>
+                            <li class="opt">Shrimp OR Scallop...$17.95</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <div class="name">Crystal Garden</div>
+                        <p class="description">Sautéed mixed vegetables in our brown sauce.</p>
+                        <ul class="protein">
+                            <li class="opt">Mixed Vegetables...$15.45</li>
+                            <li class="opt">Chicken OR Beef OR Tofu...$15.95</li>
+                            <li class="opt">Shrimp OR Scallop...$17.95</li>
+                        </ul>
                     </div>
                 </div>
-
-
             </div>
         </div>
         <div class="copyright">
