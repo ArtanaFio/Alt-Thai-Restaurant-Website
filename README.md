@@ -22,12 +22,17 @@ Images:
         Alternative text: Crystal Thai: Authentic Thai Cuisine
         Source: Tathawee Inc.
         Designer: Niada Niederhauser Roble
-        contact: niadan@gmail.com
+        Contact: niadan@gmail.com
 
 --- Orange and White Thai Flower Background
         File name: CT_web_bkgrd.jpg
         Source: Tathawee Inc.
         Designer: Niada Niederhauser Roble
-        contact: niadan@gmail.com
+        Contact: niadan@gmail.com
 
----
+--- Chili Icon
+        File name: chili.png
+        Alternative text: none
+        Source: Tathawee Inc.
+        Designer: Niada Niederhauser Roble
+        Contact: niadan@gmail.com
