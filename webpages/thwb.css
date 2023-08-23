@@ -147,6 +147,14 @@ li {
 
 /*   Styling for all menu-related webpages   */
 
+.item-title {
+    display: flex;
+}
+
+.chili {
+    width: 5%;
+    height: auto;
+}
 .lunch {
     background-color: #f7f7c0;
     background-repeat: no-repeat;
