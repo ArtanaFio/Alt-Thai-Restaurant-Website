@@ -1,0 +1,105 @@
+.website {
+    background-color: #f7cd80;
+    background-image: url(../../Images/ORWH.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 20px double orange;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation {
+    display: flex;
+    background-color: orange;
+    gap: 30px;
+    padding: 15px;
+    box-shadow: 5px 5px 10px brown;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.links {
+    font-size: 25px;
+    font-weight: 1000;
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover {
+    color: brown;
+    text-decoration: underline double;
+}
+
+.title-image {
+    width: 600px;
+    height: 200px;
+    border: 10px solid brown;
+    box-shadow: 5px 5px 10px brown;
+    align-self: center;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    
+}
+
+.content-pages {
+    width: 1000px;
+    align-self: center;
+}
+
+.header {
+    font-size: 36px;
+    font-weight: bold;
+    color: brown;
+    background-color: white;
+    opacity: 0.75;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+}
+
+.text {
+    font-size: 25px;
+    color: brown;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    opacity: 0.85;
+    border-radius: 20px;
+    padding: 40px;
+    align-items: center;
+}
+
+.subheader {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.map {
+    color: brown;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    padding:  20px;
+    border-radius: 50px;
+    border: none;
+    background-color: orange;
+    box-shadow: 5px 5px brown;
+}
+
+.map:hover {
+    color: white;
+}
+
+.copyright {
+    background-color: orange;
+    color: white;
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+}

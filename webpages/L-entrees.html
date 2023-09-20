@@ -3,35 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Crystal Thai - Menu</title>
-        <link rel="stylesheet" href="thwb.css">
-        <style>
-            .content-pages {
-                width: 1500px;
-                align-self: center;
-            }
-            .top-section {
-                text-align: center;
-                width: 1000px;
-            }
-
-            .food {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                flex-wrap: wrap;
-                gap: 50px;
-                width: 1500px;
-                height: 1000px;
-                align-items: center;
-                /*border: 5px dotted teal;*/
-            }
-
-            .item {
-                width: 400px;
-                height: 150px;
-                /*border: 2px dotted magenta;*/
-            }
-        </style>
+        <link rel="stylesheet" href="CSS_Files/lunch.css">
     </head>
     <body class="lunch">
         <p class="navigation">
@@ -44,12 +16,12 @@
         </p>
         <img class="title-image" src="../Images/Clear CT Logo.png" alt="Crystal Thai: Authentic Thai Cuisine">
         <div class="content-pages">
-            <div class="header">Entrees 
+            <div class="header">Lunch Entrees 
                 <br><div class="note">All entrees are served with quality white jasmine rice</div>
             </div>
             <br>
         </div>
-        <div class="content-pages">
+        <div class="content-lunch-entree">
             <div class="text">
                 <em class="align-center">Please note that the lunch menu 
                     is only available Tuesday through Thursday <br>from 12 
@@ -73,7 +45,7 @@
                             <option value="L-appetizers.html">Appetizers</option>
                             <option value="L-salads.html">Salads</option>
                             <option value="L-soups.html">Soups</option>
-                            <option value="L-entrees.html">Entrees</option>
+                            <option value="L-entrees.html">Lunch Entrees</option>
                             <option value="L-desserts.html">Desserts</option>
                             <option value="L-beverages.html">Beverages</option>
                         </select>
@@ -92,8 +64,8 @@
                 </div>
                 <br>
                 <br>
-                <div class="food">
-                    <div class="item">
+                <div class="food food-entree">
+                    <div class="item-salad">
                         <div class="name">Sesame Pineapple</div>
                         <p class="description">Sautéed pineapple, onion, carrot, topped with roasted sesame seed.</p>
                         <ul class="protein">
@@ -101,7 +73,7 @@
                             <li class="opt">Shrimp...$12.49</li>
                         </ul>
                     </div>
-                    <div class="item">
+                    <div class="item-salad">
                         <div class="name">Crystal Thai Cashew</div>
                         <p class="description">Sautéed onion, bell pepper, celery, carrot, and cashew nuts in our special brown sauce.</p>
                         <ul class="protein">
@@ -110,7 +82,7 @@
                         </ul>
                         <p class="sub-description">*Add extra cashew nuts for $2.50</p> 
                     </div>
-                    <div class="item">
+                    <div class="item-salad">
                         <div class="name">Pepper Perfect</div>
                         <p class="description">Sautéed bell pepper, onion, carrot, and tomato in a tasty oyster sauce.</p>
                         <ul class="protein">
@@ -118,7 +90,7 @@
                             <li class="opt">Shrimp...$12.49</li>
                         </ul>
                     </div>
-                    <div class="item">
+                    <div class="item-salad">
                         <div class="name">Sweet and Sour</div>
                         <p class="description">Sautéed pineapple, cucumber, tomato, bell pepper, onion, and carrot in our special house sauce.</p>
                         <ul class="protein">
@@ -126,7 +98,7 @@
                             <li class="opt">Shrimp...$12.49</li>
                         </ul>
                     </div>
-                    <div class="item">
+                    <div class="item-salad">
                         <div class="name">Tasty Ginger</div>
                         <p class="description">Sautéed fresh ginger, onion, carrot, mushroom, and scallions in a brown sauce.</p>
                         <ul class="protein">
@@ -134,7 +106,7 @@
                             <li class="opt">Shrimp...$12.49</li>
                         </ul> 
                     </div>
-                    <div class="item">
+                    <div class="item-salad">
                         <div class="name">Sweet Basil (Pad Ka Prao)<span><img class="chili" src="../Images/chili.png"></span></div>
                         <p class="description">A popular Thai dish made of sautéed sweet basil, onion, and bell peppers in a brown sauce.</p>
                         <ul class="protein">
@@ -142,7 +114,7 @@
                             <li class="opt">Shrimp...$12.49</li>
                         </ul>
                     </div>
-                    <div class="item">
+                    <div class="item-salad">
                         <div class="name">Crystal Garden</div>
                         <p class="description">Sautéed mixed vegetables in our brown sauce.</p>
                         <ul class="protein">
@@ -150,7 +122,7 @@
                             <li class="opt">Shrimp...$12.49</li>
                         </ul>
                     </div>
-                    <div class="item">
+                    <div class="item-salad">
                         <div class="name">Red Curry<span><img class="chili" src="../Images/chili.png"></span></div>
                         <p class="description">Red curry paste cooked in coconut milk with bell pepper, bamboo shoot, and sweet basil.</p>
                         <ul class="protein">
@@ -158,7 +130,7 @@
                             <li class="opt">Shrimp...$12.49</li>
                         </ul> 
                     </div>
-                    <div class="item">
+                    <div class="item-salad">
                             <div class="name">Green Curry<span><img class="chili" src="../Images/chili.png"></span></div>
                         <p class="description">Green curry paste cooked in coconut milk with bell pepper, eggplant, and sweet basil. Subtly 
                             spicier than the other curries.</p>
@@ -167,7 +139,7 @@
                             <li class="opt">Shrimp...$12.49</li>
                         </ul>
                     </div>
-                    <div class="item">
+                    <div class="item-salad">
                             <div class="name">Panang Curry<span><img class="chili" src="../Images/chili.png"></span></div>
                         <p class="description">Panang curry paste cooked in coconut milk with peanut sauce, crushed peanuts, bell pepper, sweet 
                             basil, and kaffir leaves.</p>
@@ -176,7 +148,7 @@
                             <li class="opt">Shrimp...$12.49</li>
                         </ul>
                     </div>
-                    <div class="item">
+                    <div class="item-salad">
                         <div class="name">Pad Thai</div>
                         <p class="description">A traditional stir-fry Thai noodle dish made with thin rice noodles, egg, bean sprouts, and 
                             scallions in a perfect blend of sauces, served with crushed peanuts and a slice of lime.</p>
@@ -186,7 +158,7 @@
                         </ul>
                         <p class="sub-description">*Please indicate to server if you do not want egg.</p> 
                     </div>
-                    <div class="item">
+                    <div class="item-salad">
                         <div class="name">Drunken Noodles (Pad Kee Mao)<span><img class="chili" src="../Images/chili.png"></span></div>
                         <p class="description">A traditional stir-fry noodle dish flavored with sweet basil and made with wide rice noodles, 
                             onion, bell pepper in a special brown sauce.</p>
@@ -195,7 +167,7 @@
                             <li class="opt">Shrimp...$12.49</li>
                         </ul>
                     </div>
-                    <div class="item">
+                    <div class="item-salad">
                         <div class="name">Fried Rice</div>
                         <p class="description">Stir-fried rice with egg, onion, carrot, pea, and tomato.</p>
                         <ul class="protein">
@@ -204,7 +176,7 @@
                         </ul> 
                         <p class="sub-description">*Please indicate to server if you do not want egg.</p>
                     </div>
-                    <div class="item">
+                    <div class="item-salad">
                         <div class="name">Sweet Basil Fried Rice<span><img class="chili" src="../Images/chili.png"></span></div>
                         <p class="description">Stir-fried rice with egg, sweet basil, bell pepper, onion, red chili flakes.</p>
                         <ul class="protein">
@@ -213,7 +185,7 @@
                         </ul> 
                         <p class="sub-description">*Please indicate to server if you do not want egg.</p>
                     </div>
-                    <div class="item">
+                    <div class="item-salad">
                         <div class="name">Soy Sauce Noodles (Pad See Elw)</div>
                         <p class="description">A traditional stir-fry noodle dish flavored with a mildly sweet soy sauce and made with wide rice 
                             noodles, egg, and broccoli.</p>

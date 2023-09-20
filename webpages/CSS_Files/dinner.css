@@ -1,0 +1,248 @@
+.dinner {
+    background-image: linear-gradient(to right, rgb(160, 2, 2), orange, rgb(253, 187, 64), orange, rgb(160, 2, 2));
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 20px double orangered;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation {
+    display: flex;
+    background-color: orange;
+    gap: 30px;
+    padding: 15px;
+    box-shadow: 5px 5px 10px brown;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.links {
+    font-size: 25px;
+    font-weight: 1000;
+    color: white;
+    text-decoration: none;
+}
+
+.links:hover {
+    color: brown;
+    text-decoration: underline double;
+}
+
+.title-image {
+    width: 600px;
+    height: 200px;
+    border: 10px solid brown;
+    box-shadow: 5px 5px 10px brown;
+    align-self: center;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    
+}
+
+.content-pages {
+    width: 1000px;
+    align-self: center;
+}
+
+.header {
+    font-size: 36px;
+    font-weight: bold;
+    color: brown;
+    background-color: white;
+    opacity: 0.75;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+}
+
+.text {
+    font-size: 25px;
+    color: brown;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    opacity: 0.85;
+    border-radius: 20px;
+    padding: 40px;
+    align-items: center;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.dropbox {
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    font-size: 25px;
+}
+
+.option:hover {
+    background-color: orange;
+}
+
+option[value=""] {
+    color: gray;
+    text-align: center;
+}
+
+.diff-menu {
+    color: orange;
+    font-size: 20px;
+}
+
+#categories {
+    font-size: 20px;
+}
+
+.top-section {
+    text-align: center;
+    width: 1000px;
+}
+
+.chili {
+    width: 5%;
+    height: auto;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 0px;
+}
+
+.protein  {
+    list-style: none; 
+    margin-top: 0px; 
+    margin-bottom: 0px;
+}
+
+.opt {
+    font-size: 18px;
+}
+
+.sub-description {
+    margin-top: 5px; 
+    font-style: italic; 
+    font-size: 16px;
+    color: black;
+}
+
+li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.content-pages-entrees {
+    width: 1500px;
+    align-self: center;
+}
+
+.food {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.food-app {
+    gap: 50px;
+    width: 950px;
+    height: 800px;
+    justify-content: flex-start;
+}
+
+.food-salad {
+    gap: 100px;
+    width: 950px;
+    height: 800px;
+    justify-content: flex-start;
+}
+
+.food-soup {
+    gap: 70px;
+    width: 950px;
+    height: 740px;
+}
+
+.food-HS {
+    gap: 10px;
+    width: 950px;
+    height: 600px;
+}
+
+.food-entree {
+    gap: 50px;
+    width: 1500px;
+    height: 1000px;
+}
+
+.food-curry {
+    gap: 70px;
+    width: 950px;
+    height: 400px;
+}
+
+.food-NR {
+    gap: 50px;
+    width: 1000px;
+    height: 1000px;
+    justify-content: flex-start;
+}
+
+.food-dessert {
+    flex-wrap: nowrap;
+    gap: 25px;
+    width: 950px;
+    height: 550px;
+}
+
+.item-app {
+    width: 400px;
+    height: 100px;
+}
+
+.item-soup {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+}
+
+.item-HS {
+    width: 400px;
+    height: 150px;
+}
+
+.item-NR {
+    width: 400px;
+    height: 200px;
+}
+
+.item-dessert {
+    width: 600px;
+    height: 150px;
+}
+
+.copyright {
+    background-color: orange;
+    color: white;
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+}
