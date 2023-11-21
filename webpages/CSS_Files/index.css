@@ -1,39 +1,160 @@
-.website {
-    background-color: #f7cd80;
-    background-image: url(../../Images/ORWH.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 20px double orange;
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
+/*
+
+https://alvarotrigo.com/blog/hamburger-menu-css/
+
+https://codepen.io/alvarotrigo/pen/MWEJEWG
+
+*/
+
+* {
+    box-sizing: border-box;
 }
 
-.navigation {
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25pt;
+    
+}
+
+body {
+    background-color: #f7cd80; /*
+    background-image: url(../../Images/ORWH.jpg); */
+    background-repeat:no-repeat;
+    background-size: cover;
+    border: 3vmin double orange;
     display: flex;
+    flex-direction: column;
+    
+}
+/*                  ----- Original -----
+nav {
+    width: 85vw;
+    margin: 3vh auto;
+    padding: 1.5vh 0;
     background-color: orange;
-    gap: 30px;
-    padding: 15px;
     box-shadow: 5px 5px 10px brown;
-    margin-left: 20px;
-    margin-right: 20px;
+}
+*/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3vmin auto;
+    width: 93vw;
+    height: 7vh;
+    background-color: orange;
+    box-shadow: 5px 5px 10px brown;
+}
+
+.li {
+    margin: 0;
 }
 
 .links {
-    font-size: 25px;
-    font-weight: 1000;
     color: white;
     text-decoration: none;
 }
 
 .links:hover {
-    color: brown;
+    color: rgb(216, 104, 0);
     text-decoration: underline double;
 }
 
+.navigation { /* ul */
+    list-style-type: none;
+    margin: 0 1rem;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.navigation > .li {
+    overflow: hidden;
+}
+
+#menu-toggle {
+    margin: 0 1rem;
+    display: none;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 30px;
+    border-radius: 2px;
+    background: white;
+}
+
+.hamburger::before {
+    content: '';
+    margin-top: -8px;
+}
+
+.hamburger::after {
+    content: '';
+    margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+    nav {
+        width: 85vw;
+    }
+    .hamburger-box {
+        display: flex;
+    }
+    .navigation {
+        position: absolute;
+        top: 6vmin;
+        margin-top: 50px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu-toggle ~ .navigation .li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.320, 1);
+    }
+    #menu-toggle:checked ~ .navigation .li {
+        height: 1.5em;
+        border: 1px solid #333;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.320, 1);
+    }
+    .navigation > .li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: white;
+        background-color: orange;
+    }
+    .navigation > .li:not(:last-child) {
+        border-bottom: 1px solid #4444;
+    }
+}
+
+/*                          ----- Original -----
+.links {
+    font-size: 25pt;
+    font-weight: 1000;
+    color: white;
+    text-decoration: none;
+}
+*/
 .title-image {
-    width: 600px;
-    height: 200px;
+    width: 35%;
+    height: auto;
     border: 10px solid brown;
     box-shadow: 5px 5px 10px brown;
     align-self: center;
@@ -43,7 +164,7 @@
 }
 
 .header {
-    font-size: 36px;
+    font-size: 36pt;
     font-weight: bold;
     color: brown;
     background-color: white;
@@ -54,7 +175,7 @@
 }
 
 .text {
-    font-size: 25px;
+    font-size: 25pt;
     color: brown;
     display: flex;
     flex-direction: column;
@@ -69,7 +190,7 @@
     background-color: orange;
     color: white;
     font-style: italic;
-    font-size: 25px;
+    font-size: 25pt;
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
@@ -80,20 +201,24 @@
 .content {
     display: flex;
     margin: 0px 100px;
-    gap: 100px;
-    align-items: flex-end;
 }
 
 .come {
-    font-size: 32px;
+    font-size: 32pt;
     font-weight: bold;
     color: orangered;
 }
 
+.box-image  {  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
 .image {
-    width: auto;
-    height: 600px;
     border-radius: 20px;
+    width:50%;
+    height: auto;
 }
 
 .subheader {
