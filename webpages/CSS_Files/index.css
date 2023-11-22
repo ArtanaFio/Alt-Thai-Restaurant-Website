@@ -49,6 +49,7 @@ nav {
 .links {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .links:hover {
@@ -168,17 +169,10 @@ nav {
     gap: 10vmin;
 }
 
-.tables {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-}
-table {
-    display: block;
-}
 .shift {
     margin-left: 50px;
 }
+
 .sub-hour {
     font-style: italic;
 }
@@ -219,7 +213,6 @@ table {
 .note {
     font-style: italic;
 }
-
 
 @media (max-width: 700px) {
     nav,
