@@ -163,16 +163,6 @@ nav {
     text-align: center;
 }
 
-.box-image  {  
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10vmin;
-}
-
-.shift {
-    margin-left: 50px;
-}
-
 .sub-hour {
     font-style: italic;
 }
@@ -189,21 +179,33 @@ nav {
     font-weight: bold;
 }
 
+.box-image  {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35vmax;
+}
+
 .row {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+}
+
+.weekday {
+    padding-top: 1vmin;
+    font-size: 3.6vmin;
 }
 
 .shift {
     font-style: italic;
-    font-size: 0.85rem;
-    padding-right: 0.5rem;
+    font-size: 3.5vmin;
+    padding-left: 3vmin;
 }
 
 .time {
     text-align: right;
-    font-size: 0.85rem;
-    align-self: last baseline;
+    font-size: 3.5vmin;
 }
 
 .color {
@@ -257,13 +259,19 @@ nav {
         border-bottom: 1px solid white;
     }
     .text {
-        font-size: 0.55rem;
+        font-size: 0.8rem;
+    }
+    .weekday {
+        font-size: 0.6rem;
+    }
+    .shift {
+        padding-left: 0.5rem;
     }
     .shift,
     .time {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
-    .business-hours {
-        width: 90%;
+    .box-image {
+        width: 60vmin;
     }
 }
