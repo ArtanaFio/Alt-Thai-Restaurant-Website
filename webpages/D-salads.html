@@ -1,53 +1,60 @@
 <!DOCTYPE html>
 <html lang="eng">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Crystal Thai - Menu</title>
         <link rel="stylesheet" href="CSS_Files/dinner.css">
     </head>
-    <body class="dinner">
-        <p class="navigation">
-            <span><a class="links" href="../index.html">Home</a></span>
-            <span><a class="links" href="about.html">About Us</a></span>
-            <span><a class="links" href="menu.html">Menu</a></span>
-            <span><a class="links" href="contact.html">Contact</a></span>
-            <span class="links"><a class="links" href="location.html">Location</a></span>
-            <span><a class="links" href="faq.html">FAQ</a></span>
-        </p>
+    <body>
+        <nav>
+            <input id="menu-toggle" type="checkbox" />
+            <label class="hamburger-box" for="menu-toggle">
+                <div class="hamburger"></div>
+            </label>
+            <ul class="navigation">
+                <li><a class="links" href="../index.html">Home</a></li>
+                <li><a class="links" href="about.html">About Us</a></li>
+                <li><a class="links" href="menu.html">Menu</a></li>
+                <li><a class="links" href="contact.html">Contact</a></li>
+                <li><a class="links" href="location.html">Location</a></li>
+                <li><a class="links" href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
         <img class="title-image" src="../Images/Clear CT Logo.png" alt="Crystal Thai: Authentic Thai Cuisine">
-        <div class="content-pages">
+        <div class="content">
             <div class="header">Salads</div>
             <br>
             <div class="text">
-                <em class="align-center">Please note that the lunch menu 
+                <p class="align-center">Please note that the lunch menu 
                     is only available Tuesday through Thursday <br>from 12 
                     to 3 pm while the dinner menu is available during all 
-                    business hours.</em>
+                    business hours.
+                </p>
                 <div class="dropbox">
                     <p>Select your menu:</p>
                     <select id="menu" onchange="window.location.href=this.value;">
-                            <option value="">OPTIONS</option>
-                            <option value="lunch.html">Lunch</option>
-                            <option value="dinner.html">Dinner</option>
-                            <option value="catering.html">Catering</option>
-                        </select>
+                        <option value="" class="menus">OPTIONS</option>
+                        <option value="lunch.html" class="menus">Lunch</option>
+                        <option value="dinner.html" class="menus">Dinner</option>
+                        <option value="catering.html" class="menus">Catering</option>
+                    </select>
                 </div>
-                <p>_____________________________________________________</p>
-                <div class="lunch-menu">
+                <div class="divider"></div>
+                <div class="dinner-menu">
                     <div class="dropbox">
-                        <p class="diff-menu" >Select your category:</p>
-                        <select id="categories" onchange="window.location.href=this.value;">
-                            <option value="">Categories</option>
-                            <option value="D-appetizers.html">Appetizers</option>
-                            <option value="D-salads.html">Salads</option>
-                            <option value="D-soups.html">Soups</option>
-                            <option value="house-specialties.html">House Specialties</option>
-                            <option value="D-entrees.html">Entrees</option>
-                            <option value="curries.html">Curries</option>
-                            <option value="noodles-rice.html">Noodles & Fried Rice</option>
-                            <option value="D-desserts.html">Desserts</option>
-                            <option value="D-beverages.html">Beverages</option>
-                        </select>
+                        <p class="diff-menu">Select your category:</p>
+                            <select id="categories" onchange="window.location.href=this.value;">
+                                <option value="" class="cat-opt">Categories</option>
+                                <option value="D-appetizers.html" class="cat-opt">Appetizers</option>
+                                <option value="D-salads.html" class="cat-opt">Salads</option>
+                                <option value="D-soups.html" class="cat-opt">Soups</option>
+                                <option value="house-specialties.html" class="cat-opt">House Specialties</option>
+                                <option value="D-entrees.html" class="cat-opt">Entrees</option>
+                                <option value="curries.html" class="cat-opt">Curries</option>
+                                <option value="noodles-rice.html" class="cat-opt">Noodles & Fried Rice</option>
+                                <option value="D-desserts.html" class="cat-opt">Desserts</option>
+                                <option value="D-beverages.html" class="cat-opt">Beverages</option>
+                            </select>
                     </div>
                 </div>
                 <br>
