@@ -134,15 +134,6 @@ nav {
     border-radius: 10px;
 }
 
-.copyright {
-    font-size: 3vmin;
-    background-color: orange;
-    color: white;
-    font-style: italic;
-    text-align: center;
-    margin: 1vmin;
-}
-
 .text {
     display: flex;
     flex-direction: column;
@@ -216,6 +207,15 @@ nav {
     font-style: italic;
 }
 
+.copyright {
+    font-size: 3vmin;
+    background-color: orange;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    margin: 4vmax 1vmin 1vmin;
+}
+
 @media (max-width: 700px) {
     nav,
     #menu-toggle:checked ~ .navigation li {
@@ -273,5 +273,8 @@ nav {
     }
     .box-image {
         width: 60vmin;
+    }
+    .copyright {
+        font-size: 0.5rem;
     }
 }

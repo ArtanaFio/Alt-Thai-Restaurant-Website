@@ -8,7 +8,7 @@ html {
     
 }
 
-.lunch {
+body {
     background-image: linear-gradient(to right, rgb(253, 187, 64), rgb(253, 253, 124), rgb(250, 250, 194), rgb(253, 253, 124), rgb(253, 187, 64));
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,17 +116,18 @@ nav {
     display: flex;
     flex-direction: column;
     margin: 0 4vmax;
-}
-
-.content-lunch-entree {
-    width: 1500px;
-    align-self: center;
+    margin-top: 4vmax;
 }
 
 .header {
     font-size: 5vmax;
     font-weight: bold;
     text-align: center;
+}
+
+.note {
+    font-size: 1vmax;
+    margin-top: 1vmin;
 }
 
 .header,
@@ -153,6 +154,7 @@ nav {
 .align-center {
     text-align: center;
     font-style: italic;
+    color: rgb(209, 102, 1);
 }
 
 .dropbox {
@@ -198,105 +200,64 @@ option[value=""] {
 
 .top-section {
     text-align: center;
-    width: 1000px;
+    width: 60%;
 }
 
-.note {
-    margin-top: 5px;
-    font-size: 18px;
+.protein-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 3vmin;
+    color: rgb(209, 102, 1);
 }
 
 .food {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
 }
 
-.food-app {
-    gap: 50px;
-    width: 950px;
-    height: 800px;
-}
-
-.food-soup {
-    gap: 70px;
-    width: 950px;
-    height: 740px;
-}
-
-.food-entree {
-    gap: 50px;
-    width: 1500px;
-    height: 1000px;
-}
-
-.food-dessert {
-    flex-wrap: nowrap;
-    gap: 25px;
-    width: 950px;
-    height: 550px;
-}
-
-.item-app {
-    width: 400px;
-    height: 100px;
-}
-
-.item-salad {
-    width: 400px;
-    height: 150px;
-}
-
-.item-soup {
+.food-left,
+.food-right {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    width: 400px;
-    height: 200px;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.item-dessert {
-    width: 600px;
-    height: 150px;
+.item {
+    width: 80%;
+    margin-bottom: 2vmin;
 }
 
 .name {
-    font-size: 20px;
+    font-size: 3vmin;
     font-weight: bold;
 }
 
 .chili {
-    width: 5%;
+    width: 3vmin;
     height: auto;
 }
 
 .description {
-    font-size: 18px;
-    color: black;
-    margin-bottom: 0px;
+    font-size: 2.75vmin;
+    color: rgb(209, 102, 1);
+    margin: 0;
 }
 
 .sub-description {
-    margin-top: 5px; 
-    font-style: italic; 
-    font-size: 16px;
-    color: black;
+    margin: 0;
+    font-size: 2.5vmin;
+    font-style: italic;
 }
 
 .protein  {
-    list-style: none; 
-    margin-top: 0px; 
-    margin-bottom: 0px;
-}
-
-li {
+    margin-top: 0;
+    margin-left: 5vmin;
+    padding: 0;
     list-style: none;
-    margin-left: 30px;
-}
-
-.opt {
-    font-size: 18px;
+    font-size: 2.5vmin;
 }
 
 .copyright {
@@ -305,12 +266,11 @@ li {
     color: white;
     font-style: italic;
     text-align: center;
-    margin: 1vmin;
+    margin: 4vmax 1vmin 1vmin;
 }
 
 @media (max-width: 700px) {
-    lunch {
-        height: 100vh;
+    body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -356,8 +316,35 @@ li {
     .navigation > li:not(:last-child) {
         border-bottom: 1px solid white;
     }
+    .note {
+        font-size: 0.5rem;
+    }
     .text {
         font-size: 0.8rem;
+    }
+    .protein-list {
+        font-size: 0.53rem;
+    }
+    .item {
+        width: 60vw;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    .chili {
+        width: 0.7rem;
+    }
+    .name {
+        font-size: 0.7rem;
+    }
+    .description {
+        font-size: 0.7rem;
+    }
+    .sub-description,
+    .protein {
+        font-size: 0.6rem;
+    }
+    .copyright {
+        font-size: 0.5rem;
     }
 }
 

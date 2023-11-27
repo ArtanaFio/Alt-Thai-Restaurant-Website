@@ -176,26 +176,24 @@ option[value=""] {
     text-align: center;
     background-color: rgb(207, 175, 114);
 }
-
-.catering-ul {
-    list-style: none; 
-    text-align: center;
-}
-
-li {
-    list-style: none;
-    margin: 0;
-}
+/*-------------------------------------------------------------------------------------------*/
 
 .catering-sub {
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 0.4rem;
 }
 
-.catering-list {
+.catering-ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: rgb(209, 102, 1);
+}
+
+.flex {
     display: flex;
-    justify-content: center;
-    gap: 100px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .copyright {
@@ -204,12 +202,11 @@ li {
     color: white;
     font-style: italic;
     text-align: center;
-    margin: 1vmin;
+    margin: 4vmax 1vmin 1vmin;
 }
 
 @media (max-width: 700px) {
-    lunch {
-        height: 100vh;
+    body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -256,6 +253,12 @@ li {
         border-bottom: 1px solid white;
     }
     .text {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
+    }
+    .list-protein {
+        font-size: 0.6rem;
+    }
+    .copyright {
+        font-size: 0.5rem;
     }
 }

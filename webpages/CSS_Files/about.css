@@ -159,7 +159,7 @@ nav {
     font-style: italic;
     font-size: 3vmin;
     text-align: center;
-    margin: 1vmin;
+    margin: 4vmax 1vmin 1vmin;
 }
 
 @media (max-width: 700px) {
