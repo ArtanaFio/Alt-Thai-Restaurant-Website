@@ -9,9 +9,9 @@ html {
 }
 
 body {
-    background-image: url(../../Images/spaced_thai_flower.png), linear-gradient(130deg, #ffbb00, white);
+    background-image: url(../../Images/white_flowers.png), linear-gradient(130deg, #ffbb00, white);
     background-repeat:repeat, no-repeat;
-    background-size: 12%, cover;
+    background-size: 50%, cover;
     background-color: #ffc000;
     border: 3vmin double orange;
     display: flex;
@@ -123,12 +123,12 @@ nav {
     font-size: 5vmax;
     font-weight: bold;
     text-align: center;
+    text-shadow: 0.5vmin 0.25vmin 3px rgb(216, 104, 0);
+    color: orange;
 }
 
 .header,
 .text {
-
-    color: brown;
     background-color: rgba(255, 255, 255, 0.829);
     border-radius: 10px;
 }
@@ -140,6 +140,7 @@ nav {
     padding: 2vmin;
     font-size: 1rem;
     text-align: center;
+    color: brown;
 }
 
 .box-image {
@@ -151,6 +152,7 @@ nav {
     width: auto;
     height: 30vmin;
     margin: 0 auto;
+    box-shadow: 0.25vmin 0.25vmin 1vmin #5e4500;
 }
 
 .copyright {

@@ -10,9 +10,9 @@ html {
 }
 
 body {
-    background-image: linear-gradient(to right, rgb(253, 253, 124), orange, rgb(253, 253, 124), orange, rgb(253, 253, 124), orange, rgb(253, 253, 124), orange, rgb(253, 253, 124));
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("../../Images/yellow_flowers.png"), linear-gradient(to right, rgb(253, 253, 124), orange, rgb(253, 253, 124), orange, rgb(253, 253, 124), orange, rgb(253, 253, 124), orange, rgb(253, 253, 124));
+    background-size: 30%, cover;
+    background-repeat: repeat, no-repeat;
     border: 3vmin double orangered;
     display: flex;
     flex-direction: column;
@@ -124,11 +124,12 @@ nav {
     font-size: 5vmax;
     font-weight: bold;
     text-align: center;
+    text-shadow: 0.5vmin 0.25vmin 3px rgb(216, 104, 0);
+    color: orange;
 }
 
 .header,
 .text {
-    color: brown;
     background-color: rgba(255, 255, 255, 0.829);
     border-radius: 10px;
 }
@@ -139,6 +140,7 @@ nav {
     align-items: center;
     justify-content: center;
     padding: 2vmin;
+    color: brown;
 }
 
 .divider {
