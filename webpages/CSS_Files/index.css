@@ -1,4 +1,5 @@
 
+
 * {
     box-sizing: border-box;
 }
@@ -10,10 +11,10 @@ html {
 }
 
 body {
-    background-color: #f7cd80;
-    background-image: url(../../Images/ORWH.jpg);
-    background-repeat:no-repeat;
-    background-size: cover;
+    background-image: url(../../Images/spaced_thai_flower.png), linear-gradient(130deg, #ffbb00, white);
+    background-repeat:repeat, no-repeat;
+    background-size: 12%, cover;
+    background-color: #ffc000;
     border: 3vmin double orange;
     display: flex;
     flex-direction: column;
@@ -162,7 +163,6 @@ nav {
     border-radius: 20px;
     width:65vmin;
     height: auto;
-    margin: 0 auto;
 }
 
 .subheader {
@@ -170,11 +170,24 @@ nav {
     font-weight: bold;
 }
 
+.spread {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
 .box-image  {  
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 35vmax;
+    background: #facc4f;
+    padding: 1rem;
+    border-radius: 30px;
+    border: 10px double orange;
+    box-shadow: 0.25vmin 0.25vmin 1vmin #c59100;
 }
 
 .row {
@@ -204,7 +217,9 @@ nav {
 }
 
 .note {
+    font-size: 3vmin;
     font-style: italic;
+    text-align: center;
 }
 
 .copyright {
@@ -264,15 +279,22 @@ nav {
     .weekday {
         font-size: 0.6rem;
     }
-    .shift {
-        padding-left: 0.5rem;
+    .lunch {
+        margin-top: 0.5rem;
     }
     .shift,
-    .time {
-        font-size: 0.6rem;
+    .time,
+    .note {
+        font-size: 0.5rem;
     }
     .box-image {
-        width: 60vmin;
+        padding: 0.5rem;
+    }
+    .box-image,
+    .image {
+        width: 100%;
+        margin-top: 1rem;
+       
     }
     .copyright {
         font-size: 0.5rem;

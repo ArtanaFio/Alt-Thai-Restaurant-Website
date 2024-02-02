@@ -10,10 +10,10 @@ html {
 }
 
 body {
-    background-color: #f7cd80;
-    background-image: url(../../Images/ORWH.jpg);
-    background-repeat:no-repeat;
-    background-size: cover;
+    background-image: url(../../Images/spaced_thai_flower.png), linear-gradient(130deg, #ffbb00, white);
+    background-repeat:repeat, no-repeat;
+    background-size: 12%, cover;
+    background-color: #ffc000;
     border: 3vmin double orange;
     display: flex;
     flex-direction: column;
