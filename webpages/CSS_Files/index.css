@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,6 +7,7 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25pt;
+    scroll-behavior: smooth;
     
 }
 
@@ -17,20 +18,22 @@ body {
     background-color: #ffc000;
     border: 3vmin double orange;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 
 nav {
-    margin: 3vmin auto;
+    position: sticky;
+    margin-top: 3vmax;
+    top: 0;
+    /*margin: 3vmin auto;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     align-self: center;
     width: 93vw;
-    height: 7vh;
-    background-color: orange;
+    height: 10vh;
+    background-color: rgb(255, 136, 0);
     box-shadow: 5px 5px 10px brown;
 }
 
@@ -109,59 +112,94 @@ nav {
 }
 
 .title-image {
-    width: 75vmin;
+    width: 95vmin;
     height: auto;
     border: 1vmin solid brown;
     box-shadow: 5px 5px 10px brown;
     align-self: center;
+    margin-top: 15vmin;
 }
 
-.content {
+main {
     display: flex;
     flex-direction: column;
-    margin: 0 4vmax;
+    margin: 0 auto;
+    width: 90%;
 }
 
-.header {
+h1 {
     font-size: 5vmax;
-    font-weight: bold;
+    margin: 5vmax 0;
     text-align: center;
-    text-shadow: 0.5vmin 0.25vmin 3px rgb(216, 104, 0);
-    color: orange;
 }
 
-.header,
+h2 {
+    font-size: 3vmax;
+    align-self: flex-start;
+    margin: 0;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+    color: orange;
+    padding: 3vmin;
+    text-shadow: 0.5vmin 0.25vmin 3px rgb(216, 104, 0);
+}
+
+h1,
 .text {
-    background-color: rgba(255, 255, 255, 0.829);
+    background-color: rgba(255, 255, 255, 0.85);
     border-radius: 10px;
 }
 
 .text {
-    color: brown;
+    color: rgb(216, 104, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 2vmin;
+    margin-bottom: 5vmax;
 }
 
-.para {
+p {
     text-align: center;
+    font-family: 'Handlee';
+    font-size: 1rem;
 }
 
 .come {
-    font-size: 3vmax;
+    font-size: 1rem;
     font-weight: bold;
     color: orange;
-    text-shadow: 0.5vmin 0.25vmin 3px rgb(216, 104, 0);
-    text-align: center;
+    text-shadow: 2px 2px 3px rgb(216, 104, 0);
+    letter-spacing: 0.5vmin;
 }
 
 .sub-hour {
     font-style: italic;
 }
 
+.box-image {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35vmax;
+    padding: 1rem;
+    border-radius: 30px;
+    flex: 1;
+    background: #facc4f;
+    border: 10px double orange;
+    box-shadow: 0.25vmin 0.25vmin 1vmin #c59100;
+}
+
+.group-image {
+    display:inline-block;
+}
+
 .image {
+    flex: 1;
     border-radius: 20px;
     width:65vmin;
     height: auto;
@@ -174,23 +212,10 @@ nav {
 }
 
 .spread {
-    display: flex;
     width: 90%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    
-}
-
-.box-image  {  
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 35vmax;
-    background: #facc4f;
-    padding: 1rem;
-    border-radius: 30px;
-    border: 10px double orange;
-    box-shadow: 0.25vmin 0.25vmin 1vmin #c59100;
+    flex-wrap: wrap;
+    gap: 5vmax;
 }
 
 .row {
@@ -201,18 +226,20 @@ nav {
 
 .weekday {
     padding-top: 1vmin;
-    font-size: 3.6vmin;
+    color: brown;
+    font-size: 1rem;
+    margin-top: 0.75rem;
 }
 
 .shift {
     font-style: italic;
-    font-size: 3.5vmin;
-    padding-left: 3vmin;
+    padding-left: 1.5rem;
+    font-size: 0.75rem;
 }
 
 .time {
     text-align: right;
-    font-size: 3.5vmin;
+    font-size: 0.75rem;
 }
 
 .color {
@@ -220,9 +247,101 @@ nav {
 }
 
 .note {
-    font-size: 3vmin;
+    font-size: 0.75rem;
     font-style: italic;
     text-align: center;
+}
+
+.map-address {
+    color: orange;
+    font-weight: normal;
+    text-align: center;
+    padding:  4vmin;
+    font-style: italic;
+    text-decoration: underline;
+    background-image:radial-gradient(rgb(250, 221, 168), white);
+}
+
+.map-address:hover {
+    color: orangered;
+    font-weight: bold;
+}
+
+iframe {
+    margin-top: 1rem;
+    border: 0.75vmin solid orange;
+    width: min(23rem, 100%);
+    height: 20rem;
+}
+
+.phone-number {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.5rem;
+}
+
+.number {
+    color: orange;
+}
+
+.phone-number,
+.left-align {
+    align-self: flex-start;
+    margin-left: 10vmin;
+}
+
+.text > ul {
+    margin: 0 20vmin;
+    font-family: 'Handlee';
+}
+
+.uber {
+    color: #01dd31;
+    font-weight: bold;
+}
+
+.uber:hover {
+    color: lime;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.grub {
+    color: orange;
+    font-weight: bold;
+}
+
+.grub:hover {
+    color: rgb(255, 217, 0);
+    text-decoration: none;
+    font-style: italic;
+}
+
+.detail {
+    align-items: flex-start;
+    padding: 10vmin;
+}
+
+details {
+    margin-bottom: 3vmin;
+    color: rgb(209, 102, 1);
+}
+
+details > p {
+    color: white;
+    background-color:rgb(209, 102, 1);
+    padding: 1vmin;
+    border-radius: 20px;
+}
+
+p span {
+    font-weight: bold;
+    color: rgb(253, 175, 74);
+}
+
+.protein-option {
+    margin-left: 6vmin;
+    color: white;
 }
 
 .copyright {
@@ -235,16 +354,23 @@ nav {
 }
 
 @media (max-width: 700px) {
+    body {
+        border: none;
+    }
+    nav {
+        top: 0;
+    }
     nav,
     #menu-toggle:checked ~ .navigation li {
-        width: 80vw;
+        width: 100vw;
+        height: 7vh;
     }
     .hamburger-box {
         display: flex;
     }
     .navigation {
         position: absolute;
-        top: 6vmin;
+        top: 0;
         margin-top: 67px;
         left: 0;
         flex-direction: column;
@@ -271,22 +397,29 @@ nav {
         padding: 0.5em 0;
         width: 100%;
         color: white;
-        background-color: orange;
+        background-color: rgb(255, 136, 0);
     }
     .navigation > li:not(:last-child) {
         border-bottom: 1px solid white;
     }
+    main {
+        width: 100%;
+    }
     .text {
-        font-size: 0.8rem;
         padding: 0;
     }
+    p {
+        margin: 10vmin;
+    }/*
     .weekday {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
     .shift,
-    .time,
+    .time {
+        font-size: 0.6rem;
+    }*/
     .note {
-        font-size: 0.5rem;
+        margin: 5vmin 0;
     }
     .box-image {
         padding: 0.5rem;
@@ -300,6 +433,6 @@ nav {
         margin-top: 1rem;
     }
     .copyright {
-        font-size: 0.5rem;
+        font-size: 0.75rem;
     }
 }

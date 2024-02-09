@@ -4,28 +4,30 @@
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Crystal Thai Restaurant - Home</title>
         <link rel="stylesheet" href="webpages/CSS_Files/index.css">
+        <script src="Assets/JS/index.js" defer></script>
     </head>
-    <body>
-        <nav>
-            <input id="menu-toggle" type="checkbox" />
-            <label class="hamburger-box" for="menu-toggle">
-                <div class="hamburger"></div>
-            </label>
-            <ul class="navigation">
-                <li><a class="links" href="webpages/about.html">About Us</a></li>
-                <li><a class="links" href="webpages/menu.html">Menu</a></li>
-                <li><a class="links" href="webpages/contact.html">Contact</a></li>
-                <li><a class="links" href="webpages/location.html">Location</a></li>
-                <li><a class="links" href="webpages/faq.html">FAQ</a></li>
-            </ul>
-        </nav>
-        <img class="title-image" src="Images/Clear CT Logo.png" alt="Crystal Thai: Authentic Thai Cuisine">
-        <div class="content">
-            <h1 class="header">Welcome to Crystal Thai!</h1>
+    <body id="home">
+            <nav>
+                <input id="menu-toggle" type="checkbox" />
+                <label class="hamburger-box" for="menu-toggle">
+                    <div class="hamburger"></div>
+                </label>
+                <ul class="navigation">
+                    <li><a class="links" href="#home">Home</a></li>
+                    <li><a class="links" href="#about">About Us</a></li>
+                    <li><a class="links" href="webpages/menu.html">Menu</a></li>
+                    <li><a class="links" href="#hours">Hours</a></li>
+                    <li><a class="links" href="#location">Location</a></li>
+                    <li><a class="links" href="#contact">Contact</a></li>
+                    <li><a class="links" href="#FAQ">FAQ</a></li>
+                </ul>
+            </nav>
+            <img class="title-image" src="Images/Clear CT Logo.png" alt="Crystal Thai: Authentic Thai Cuisine">
+        <main>
+            <h1>Welcome to Crystal Thai!</h1>
             <div class="text">
-                <p class="para">Your local family-owned Thai restaurant.</p>
-                <p class="para">We are located in Owings Mills, MD on the lower level of the Valley Village
-                    Shopping Center on Reisterstown Rd.</p>
+                <p class="para"><strong>Your local family-owned Thai restaurant.</strong></p>
+                <p  id="hours" class="para">We are located in Owings Mills, MD on the lower level of the <strong>Valley Village Shopping Center</strong> on Reisterstown Rd.</p>
                 <div class="spread">
                     <div class="box-image">
                         <div class="row">
@@ -64,14 +66,135 @@
                         </div>
                         <p class="note color">Note: Seating ends 30 minutes before closing.</p>
                     </div>
-                    
                     <img class="image" alt="Dining area" src="Images/table.jpg">
                 </div>
-                <p class="come">Come dine-in with us!</p>
+                <div id="about"></div>
             </div>
-        </div>
-        <div class="copyright">
-            Copyright &#169 Tathawee Inc. 2023
-        </div>
+            <div class="text">
+                <h2>Our History</h2>
+                <p>Although the location has been a Thai restaurant for more than two decades, the current Thai family has own the establishment since August 2007.</p>
+                <img class="image" alt="dining area" src="Images/back.jpg">
+                <p>Our dishes are classic Thai favorites, influenced by the family's Southern Thai roots.</p>
+                <div class="image-group">
+                    <img class="image" alt="pad kaprao: basil stir fry" src="Images/basil_stirfry.jpg">
+                    <img class="image" alt="mango" src="Images/small_mango.png">
+                </div>
+                <p>You will always find family members working in the kitchen to proudly provide you with a piece of their culture.</p>
+                <img class="image" alt="Thai statue" src="Images/statue.jpg">
+                <p class="come">Come dine-in with us!</p>
+                <div id="location"></div>
+            </div>
+            <div class="text">
+                <h2>Here We Are!</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3083.1778205126598!2d-76.7508468!3d39.3974829!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81744fe8a89db%3A0x3bc1c7594ad3a854!2s9191%20Reisterstown%20Rd%2C%20Owings%20Mills%2C%20MD%2021117!5e0!3m2!1sen!2sus!4v1706899770351!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>
+                    <a class="map-address" href="https://www.google.com/maps/place/9191+Reisterstown+Rd,
+                    +Owings+Mills,+MD+21117/@39.3974829,-76.7508468,17z/data=!3m1!4b1!
+                    4m6!3m5!1s0x89c81744fe8a89db:0x3bc1c7594ad3a854!8m2!3d39.3974829!4d
+                    -76.7482719!16s%2Fg%2F11dfjx0g2y?entry=ttu">9191 Reisterstown Road,
+                    Owings Mills, MD 21117
+                    </a>
+                </p>
+                <p>We are located at the intersection of Reisterstown Road and McDonough Road.</p>
+                <p>You can find us on the lower level of the <strong>Valley Village Shopping Center
+                </strong> 
+                <br>(back of the building), directly below (behind) the Orange Theory Gym.</p>
+                <div id="contact"></div>
+            </div>
+            <div class="text">
+                <h2>Contact Us</h2>
+                <p class="phone-number">Phone Number: <span class="number">(410)-581-0449</span></p>
+                <p class="left-align">Please call us during business hours to:</p>
+                <ul>
+                    <li>place takeout orders</li>
+                    <li>make reservations</li>
+                    <li>ask questions about our menu, catering, special business hours, concerns about allergies and dietary restrictions, directions, etc.</li>
+                </ul>
+                <p class="left-align">If you want your order delivered, contact either <a class="hyperlink uber" href="https://www.ubereats.com/store/crystal-thai/mY2efPUOT1arf0g_e986KA">Uber Eats</a> or <a class="hyperlink grub" href="https://www.grubhub.com/restaurant/crystal-thai-restaurant-9191-reisterstown-road-owings-mills/3315802">GrubHub</a> directly.</p>
+                <p>Thank you.</p>
+                <div id="FAQ"></div>
+            </div>
+            <div class="text detail">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>Is Thai food spicy?</summary>
+                            <p><span>Answer:</span> Although Thai people love their chilies, not all Thai food is spicy and 
+                            most items on our menu can be made not spicy or with varying spicy levels.</p>
+                </details>
+                <details>
+                    <summary>Can I have more than one type of meat or protein?</summary>
+                        <p><span>Answer:</span> Yes, but there is an upcharge when you ask for either multiple types of 
+                            protein or extra protein. The upcharge fee will depend on the protein. These 
+                            prices are listed in the menu section:
+                            <br>
+                            <br>
+                                <span class="protein-option">Chicken or Beef: $3.50</span><br>
+                                <span class="protein-option">Shrimp: $5.00</span><br>
+                                <span class="protein-option">Scallop: $6.00</span><br>
+                                <span class="protein-option">Tofu: $3.00</span>
+                        </p>
+                </details>
+                <details>
+                    <summary>Can I change the veggies in the dish?</summary>
+                        <p><span>Answer:</span>Yes, but this excludes most appetizers. Please check with your server. We 
+                            may not have certain vegetables.</p>
+                </details>
+                <details>
+                    <summary>How long will my order take?</summary>
+                        <p><span>Answer:</span> Due to the fact all items are made to order, time will vary depending on 
+                            how large the order is, how many orders are ahead of your order, and the time of 
+                            day. Generally an average sized order (three items) should take 15 &#8211 20 
+                            minutes.
+                        </p>
+                </details>
+                <details>
+                    <summary>Are you open all day?</summary>
+                        <p><span>Answer:</span> We close the restaurant for an hour and a half between lunch and dinner hours during our 
+                            weekday business days. On weekends we are only open for dinner hours.
+                        </p>
+                </details>
+                <details>
+                    <summary>Which curry is the spiciest?</summary>
+                        <p><span>Answer:</span> Traditionally green curry (gang khiao) is the spiciest; however, we make our curries 
+                            at an easily tolerable spice level for most people by default instead of the typical spicy that 
+                            Thai people are accustomed to. Since we make almost everything to order, we can make any curry 
+                            as spicy or as mild as desired, given a 1 &#8211 5 scale.
+                        </p>
+                </details>
+                <details>
+                    <summary>What can I substitute instead of white jasmine rice?</summary>
+                        <p><span>Answer:</span> Unfornately brown rice is not an option; however, you can substitute rice with either 
+                            rice noodles or steam mixed vegetables for a small upcharge.
+                        </p>
+                </details>
+                <details>
+                    <summary>Do you do delivery?</summary>
+                        <p><span>Answer:</span> We currently rely on both Uber Eats and Grubhub for delivery. To order delivery, you 
+                            will have to place your order through their platform instead of contacting us directly. 
+                            Pickup and dine-in orders are best made by contacting us directly.
+                        </p>
+                </details>
+                <details>
+                    <summary>Do you take reservations?</summary>
+                        <p><span>Answer:</span> Yes, when you call to place your reservation, we will need to know your name, phone 
+                            number, day and time of reservation, and how many people will be with you. If more or fewer 
+                            people are attending, please inform us as soon as possible; we cannot guarantee we will be able 
+                            to accomodate more people as we are a small restaurant.
+                        </p>
+                </details>
+                <details>
+                    <summary>We are a large group, do we need to make a reservation?</summary>
+                        <p><span>Answer:</span> We have limited space since we are a small restaurant so we encourage groups of six or 
+                            more to reserve their table as soon as possible.                        
+                        </p>
+                </details>
+                <details>
+                    <summary>Do you do catering?</summary>
+                        <p><span>Answer:</span> Yes, check out our catering section for more information.
+                        </p>
+                </details>
+            </div>
+        </main>
+        <footer class="copyright">Copyright &#169 Tathawee Inc. 2023</footer>
     </body>
 </html>
