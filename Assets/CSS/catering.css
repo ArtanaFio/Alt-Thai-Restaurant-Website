@@ -8,24 +8,21 @@ html {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25pt;
     scroll-behavior: smooth;
-    
 }
 
 body {
-    background-image: url(../../Images/white_flowers.png), linear-gradient(130deg, #ffbb00, white);
-    background-repeat:repeat, no-repeat;
-    background-size: 50%, cover;
-    background-color: #ffc000;
+    background-image: url("../../Images/yellow_flowers.png"), linear-gradient(to right, rgb(253, 253, 124), orange, rgb(253, 253, 124), orange, rgb(253, 253, 124), orange, rgb(253, 253, 124), orange, rgb(253, 253, 124));
+    background-size: 30%, cover;
+    background-repeat: repeat, no-repeat;
     border: 3vmin double orange;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 nav {
     position: sticky;
     margin-top: 3vmax;
     top: 0;
-    /*margin: 3vmin auto;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -57,8 +54,9 @@ nav {
 }
 
 .links:hover {
-    color: rgb(216, 104, 0);
+    background-image: radial-gradient(rgba(255, 255, 255, 0.8), transparent);
     text-decoration: underline double;
+    border-radius: 10px;
 }
 
 .hamburger-box {
@@ -131,16 +129,6 @@ h1 {
     font-size: 5vmax;
     margin: 5vmax 0;
     text-align: center;
-}
-
-h2 {
-    font-size: 3vmax;
-    align-self: flex-start;
-    margin: 0;
-}
-
-h1,
-h2 {
     font-weight: bold;
     color: orange;
     padding: 3vmin;
@@ -149,7 +137,7 @@ h2 {
 
 h1,
 .text {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(250, 250, 194, 0.8);
     border-radius: 10px;
 }
 
@@ -163,198 +151,97 @@ h1,
     margin-bottom: 5vmax;
 }
 
+.divider {
+    width: 100%;
+    border-bottom: 0.5vmin solid brown;
+    margin: 5vmin 0;
+}
+
+.menu-note {
+    font-style: italic;
+    font-family: 'Handlee';
+    margin: 5vmin 0;
+    border: 5px double rgb(216, 104, 0);
+    padding: 2vmin;
+    background-color: rgb(252, 201, 107);
+}
+
 p {
     text-align: center;
-    font-family: 'Handlee';
     font-size: 1rem;
 }
 
-.come {
-    font-size: 1rem;
-    font-weight: bold;
-    color: orange;
-    text-shadow: 2px 2px 3px rgb(216, 104, 0);
-    letter-spacing: 0.5vmin;
+strong {
+    text-decoration: underline;
+    letter-spacing: 0.1rem;
+    color: white;
 }
 
-.sub-hour {
-    font-style: italic;
-}
-
-.box-image {  
+.dropbox {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 35vmax;
-    padding: 1rem;
-    border-radius: 30px;
-    flex: 1;
-    background: #facc4f;
-    border: 10px double orange;
-    box-shadow: 0.25vmin 0.25vmin 1vmin #c59100;
 }
 
-.group-image {
-    display:inline-block;
+#menu {
+    font-size: 0.8rem;
+    background-color: white;
 }
 
-.image {
-    flex: 1;
-    border-radius: 20px;
-    width:65vmin;
-    height: auto;
-    box-shadow: 0.25vmin 0.25vmin 1vmin #5e4500;
+#menu:hover {
+    box-shadow: 5px 5px 10px rgba(255, 166, 0, 0.671), -5px -5px 10px rgba(255, 166, 0, 0.671), 5px -5px 10px rgba(255, 166, 0, 0.671), -5px 5px 10px rgba(255, 166, 0, 0.671);
 }
 
-.subheader {
-    text-decoration: underline;
-    font-weight: bold;
+option[value] {
+    background-color: rgb(252, 201, 107);
+    font-size: 0.8rem;
 }
 
-.spread {
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5vmax;
-}
-
-.row {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.weekday {
-    padding-top: 1vmin;
-    color: brown;
-    font-size: 1rem;
-    margin-top: 0.75rem;
-}
-
-.shift {
-    font-style: italic;
-    padding-left: 1.5rem;
-    font-size: 0.75rem;
-}
-
-.time {
-    text-align: right;
-    font-size: 0.75rem;
-}
-
-.color {
-    color: rgb(216, 104, 0);
-}
-
-.note {
-    font-size: 0.75rem;
-    font-style: italic;
+option[value=""] {
+    color: rgb(117, 98, 63);
     text-align: center;
+    background-color: rgb(207, 175, 114);
 }
 
-.map-address {
-    color: orange;
-    font-weight: normal;
+.catering-sub {
     text-align: center;
-    padding:  4vmin;
-    font-style: italic;
-    text-decoration: underline;
-    background-image:radial-gradient(rgb(250, 221, 168), white);
+    margin-bottom: 0.4rem;
 }
 
-.map-address:hover {
-    color: orangered;
-    font-weight: bold;
+main ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
 }
 
-iframe {
-    margin-top: 1rem;
-    border: 0.75vmin solid orange;
-    width: min(23rem, 100%);
-    height: 20rem;
-}
-
-.phone-number {
-    font-size: 1rem;
-    font-weight: bold;
-    margin: 0.5rem;
-}
-
-.number {
-    color: orange;
-}
-
-.phone-number,
-.left-align {
-    align-self: flex-start;
-    margin-left: 10vmin;
-}
-
-.text > ul {
-    margin: 0 20vmin;
-    font-family: 'Handlee';
-}
-
-.uber {
-    color: #01dd31;
-    font-weight: bold;
-}
-
-.uber:hover {
-    color: lime;
-    text-decoration: none;
-    font-style: italic;
-}
-
-.grub {
-    color: orange;
-    font-weight: bold;
-}
-
-.grub:hover {
-    color: rgb(255, 217, 0);
-    text-decoration: none;
-    font-style: italic;
-}
-
-.detail {
-    align-items: flex-start;
-    padding: 10vmin;
-}
-
-details {
-    margin-bottom: 3vmin;
+.catering-list {
     color: rgb(209, 102, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 650px;
+    padding-bottom: 5vmax;
 }
 
-details > p {
-    color: white;
-    background-color:rgb(209, 102, 1);
-    padding: 1vmin;
-    border-radius: 20px;
+.chili {
+    width: 1rem;
+    height: auto;
 }
 
-p span {
-    font-weight: bold;
-    color: rgb(253, 175, 74);
-}
-
-.protein-option {
-    margin-left: 6vmin;
-    color: white;
-}
-
-.copyright {
+footer {
     font-size: 3vmin;
-    background-color: orange;
+    background-color: rgb(255, 136, 0);
     color: white;
     font-style: italic;
     text-align: center;
     margin: 4vmax 1vmin 1vmin;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1150px) {
     body {
+        justify-content: space-between;
         border: none;
     }
     nav {
@@ -362,7 +249,7 @@ p span {
     }
     nav,
     #menu-toggle:checked ~ .navigation li {
-        width: 100vw;
+        width: 95vw;
         height: 7vh;
     }
     .hamburger-box {
@@ -410,29 +297,14 @@ p span {
     }
     p {
         margin: 10vmin;
-    }/*
-    .weekday {
-        font-size: 0.7rem;
     }
-    .shift,
-    .time {
-        font-size: 0.6rem;
-    }*/
-    .note {
-        margin: 5vmin 0;
+    .list-protein {
+        font-size: 0.9rem;
     }
-    .box-image {
-        padding: 0.5rem;
+    .catering-list {
+        height: 100%;
     }
-    .spread,
-    .box-image,
-    .image {
-        width: 100%;
-    }
-    .image {
-        margin-top: 1rem;
-    }
-    .copyright {
+    footer {
         font-size: 0.75rem;
     }
 }

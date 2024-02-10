@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Crystal Thai - Menu</title>
-        <link rel="stylesheet" href="CSS_Files/catering.css">
+        <link rel="stylesheet" href="../Assets/CSS/catering.css">
     </head>
     <body>
         <nav>
@@ -13,21 +13,21 @@
             </label>
             <ul class="navigation">
                 <li><a class="links" href="../index.html">Home</a></li>
-                <li><a class="links" href="about.html">About Us</a></li>
-                <li><a class="links" href="menu.html">Menu</a></li>
-                <li><a class="links" href="contact.html">Contact</a></li>
-                <li><a class="links" href="location.html">Location</a></li>
-                <li><a class="links" href="faq.html">FAQ</a></li>
+                <li><a class="links" href="../index.html#about">About Us</a></li>
+                <li><a class="links" href="#menu-top">Menu</a></li>
+                <li><a class="links" href="../index.html#hours">Hours</a></li>
+                <li><a class="links" href="../index.html#location">Location</a></li>
+                <li><a class="links" href="../index.html#contact">Contact</a></li>
+                <li><a class="links" href="../index.html#FAQ">FAQ</a></li>
             </ul>
         </nav>
         <img class="title-image" src="../Images/Clear CT Logo.png" alt="Crystal Thai: Authentic Thai Cuisine">
-        <div class="content">
-            <h1 class="header">Catering Menu</h1>
-            <br>
+        <main>
+            <h1>Catering Menu</h1>
             <div class="text">
                 <div class="dropbox">
                     <p>Select your menu:</p>
-                    <select id="menu" onchange="window.location.href=this.value;">
+                    <select title="menu-options" id="menu" onchange="window.location.href=this.value;">
                         <option value="">OPTIONS</option>
                         <option value="lunch.html">Lunch</option>
                         <option value="dinner.html">Dinner</option>
@@ -35,15 +35,17 @@
                     </select>
                 </div>
                 <div class="divider"></div>
-                <p class="align-center">Please place your catering order at least two days before pickup to allow us time to prepare.</p>
-                <p class="align-center">Choose from a variety of options or ask us to customize to fit your needs. Vegetarian sauces are
-                    automatically paired with vegetarian protein options unless otherwise requested. Entrees with 
-                    noodles or fried rice do not come with white jasmine rice. Appetizers are 15% off with an order 
-                    of one entree party tray.
-                </p>
-                <p class="align-center">Serves between 5 and 7 people depending on appetite. Foil Tray measures 10 &#215 11 &#215 13 inches with 
-                    a flat lid. Extra container of jasmine rice is $15.00.
-                </p>
+                <div class="menu-note">
+                    <p><strong>Please place your catering order at least two days before pickup to allow us time to prepare.</strong></p>
+                    <p>Choose from a variety of options or ask us to customize to fit your needs. <b>Vegetarian sauces are
+                        automatically paired with vegetarian protein options</b> unless otherwise requested. Entrees with 
+                        noodles or fried rice <b>do not</b> come with white jasmine rice. <b>Appetizers are 15% off with an order 
+                        of one entree party tray</b>.
+                    </p>
+                    <p>Serves <b>5 &#8211 7 people</b> depending on appetite. Foil Tray measures <b>10 &#215 11 &#215 13 inches</b> with 
+                        a flat lid. Extra container of jasmine rice is $15.00.
+                    </p>
+                </div>
                 <h4 class="catering-sub">Protein options:</h4>
                 <ul class="catering-ul">
                     <li class="list-protein">Mix Vegetables.......$50.00</li>
@@ -52,31 +54,29 @@
                     <li class="list-protein">Shrimps..................$70.00</li>
                 </ul>
                 <h4 class="catering-sub">Entrees:</h4>
-                    <ul class="catering-ul flex">
-                        <li>Red curry</li>
-                        <li>Green curry</li>
-                        <li>Panang curry</li>
+                    <ul class="catering-list">
+                        <li>Red curry<span><img class="chili" alt="this item is spicy" src="../Images/chili.png"></span></li>
+                        <li>Green curry<span><img class="chili" alt="this item is spicy" src="../Images/chili.png"></span></li>
+                        <li>Panang curry<span><img class="chili" alt="this item is spicy" src="../Images/chili.png"></span></li>
                         <li>Massaman curry</li>
                         <li>Pad Thai</li>
                         <li>Soy sauce noodles</li>
-                        <li>Drunken noodles</li>
+                        <li>Drunken noodles<span><img class="chili" alt="this item is spicy" src="../Images/chili.png"></span></li>
                         <li>Egg noodle platter</li>
                         <li>Fried rice</li>
-                        <li>Sweet basil fried rice</li>
+                        <li>Sweet basil fried rice<span><img class="chili" alt="this item is spicy" src="../Images/chili.png"></span></li>
                         <li>Pineapple fried rice</li>
                         <li>Sesame pineapple</li>
                         <li>Crystal Thai cashew</li>
                         <li>Pepper perfect</li>
                         <li>Sweet and sour</li>
                         <li>Tasty ginger</li>
-                        <li>Sweet basil</li>
+                        <li>Sweet basil<span><img class="chili" alt="this item is spicy" src="../Images/chili.png"></span></li>
                         <li>Garlic & black pepper</li>
                         <li>Crystal garden</li>
                     </ul>
             </div>
-        </div>
-        <div class="copyright">
-            Copyright &#169 Tathawee Inc. 2023
-        </div>
+        </main>
+        <footer>Copyright &#169 Tathawee Inc. 2024</footer>
     </body>
 </html>

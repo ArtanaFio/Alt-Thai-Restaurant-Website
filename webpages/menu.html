@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
     <head>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Crystal Thai - Menu</title>
         <link rel="stylesheet" href="../Assets/CSS/menu.css">
     </head>
-    <body id="menu">
+    <body id="menu-top">
         <nav>
             <input id="menu-toggle" type="checkbox" />
             <label class="hamburger-box" for="menu-toggle">
@@ -14,7 +14,7 @@
             <ul class="navigation">
                 <li><a class="links" href="../index.html">Home</a></li>
                 <li><a class="links" href="../index.html#about">About Us</a></li>
-                <li><a class="links" href="#menu">Menu</a></li>
+                <li><a class="links" href="#menu-top">Menu</a></li>
                 <li><a class="links" href="../index.html#hours">Hours</a></li>
                 <li><a class="links" href="../index.html#location">Location</a></li>
                 <li><a class="links" href="../index.html#contact">Contact</a></li>
@@ -22,17 +22,16 @@
             </ul>
         </nav>
         <img class="title-image" src="../Images/Clear CT Logo.png" alt="Crystal Thai: Authentic Thai Cuisine">
-        <div class="content">
-            <h1 class="header">Menu</h1>
+        <main>
+            <h1>Menu</h1>
             <div class="text">
-                <p class="align-center">Please note that the lunch menu 
-                    is only available Tuesday through Thursday <br>from 12 
-                    to 3 pm while the dinner menu is available during all 
-                    business hours.
-                </p>
+                <div class="menu-note">
+                    <p>The <strong>lunch menu is only available Tuesday &#8211 Thursday, 12 &#8211 3 pm</strong>.</p>
+                    <p>The dinner menu is available during all business hours.</p>
+                </div>
                 <div class="dropbox">
                     <p>Select your menu:</p>
-                        <select id="menu" onchange="window.location.href=this.value;">
+                        <select title="menu-options" id="menu" onchange="window.location.href=this.value;">
                             <option value="">OPTIONS</option>
                             <option value="lunch.html" class="menus">Lunch</option>
                             <option value="dinner.html"class="menus">Dinner</option>
@@ -40,9 +39,7 @@
                         </select>
                 </div>
             </div>
-        </div>
-        <div class="copyright">
-            Copyright &#169 Tathawee Inc. 2023
-        </div>
+        </main>
+        <footer>Copyright &#169 Tathawee Inc. 2024</footer>
     </body>
 </html>

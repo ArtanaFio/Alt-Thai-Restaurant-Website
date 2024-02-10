@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background-image: url(../../Images/white_flowers.png), linear-gradient(130deg, #ffbb00, white);
+    background-image: url("../../Images/white_flowers.png"), linear-gradient(95deg, #ffbb00, white);
     background-repeat:repeat, no-repeat;
     background-size: 50%, cover;
     background-color: #ffc000;
@@ -351,7 +351,7 @@ p span {
     margin: 4vmax 1vmin 1vmin;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1320px) {
     body {
         border: none;
     }
@@ -408,14 +408,7 @@ p span {
     }
     p {
         margin: 10vmin;
-    }/*
-    .weekday {
-        font-size: 0.7rem;
     }
-    .shift,
-    .time {
-        font-size: 0.6rem;
-    }*/
     .note {
         margin: 5vmin 0;
     }

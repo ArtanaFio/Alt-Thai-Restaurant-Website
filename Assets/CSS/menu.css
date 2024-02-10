@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
-/*
+
 * {
     box-sizing: border-box;
 }
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background-image: url(../../Images/white_flowers.png), linear-gradient(130deg, #ffbb00, white);
+    background-image: url("../../Images/white_flowers.png"), linear-gradient(120deg, #ffbb00, white);
     background-repeat:repeat, no-repeat;
     background-size: 50%, cover;
     background-color: #ffc000;
@@ -55,8 +55,9 @@ nav {
 }
 
 .links:hover {
-    color: rgb(216, 104, 0);
+    background-image: radial-gradient(rgba(255, 255, 255, 0.8), transparent);
     text-decoration: underline double;
+    border-radius: 10px;
 }
 
 .hamburger-box {
@@ -115,52 +116,65 @@ nav {
     border: 1vmin solid brown;
     box-shadow: 5px 5px 10px brown;
     align-self: center;
-    margin-top: 2vmax;
+    margin-top: 15vmin;
 }
 
-.content {
+main {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     width: 90%;
 }
 
-.header {
+h1 {
     font-size: 5vmax;
-    font-weight: bold;
-    text-align: center;
-    text-shadow: 0.5vmin 0.25vmin 3px rgb(216, 104, 0);
-    color: orange;
     margin: 5vmax 0;
+    text-align: center;
+    font-weight: bold;
+    color: orange;
+    padding: 3vmin;
+    text-shadow: 0.5vmin 0.25vmin 3px rgb(216, 104, 0);
 }
 
-.header,
+h1,
 .text {
     background-color: rgba(255, 255, 255, 0.829);
     border-radius: 10px;
 }
 
 .text {
+    color: rgb(216, 104, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 2vmin;
-    color: brown;
+    padding-bottom: 7vmin;
+    margin-bottom: 5vmax;
 }
 
-.copyright {
-    font-size: 3vmin;
-    background-color: orange;
+.menu-note {
+    font-style: italic;
+    font-family: 'Handlee';
+    margin: 5vmin 0;
+    border: 5px double rgb(216, 104, 0);
+    padding: 3vmin;
+    background-color: rgb(252, 201, 107);
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.menu-note p {
+    margin: 0;
+}
+
+strong {
+    text-decoration: underline;
+    letter-spacing: 0.1rem;
     color: white;
-    font-style: italic;
-    text-align: center;
-    margin: 4vmax 1vmin 1vmin;
-}
-
-.align-center {
-    text-align: center;
-    font-style: italic;
 }
 
 .dropbox {
@@ -192,10 +206,21 @@ option[value=""] {
     background-color: rgb(252, 201, 107);
 }
 
-@media (max-width: 700px) {
+footer {
+    font-size: 3vmin;
+    background-color: rgb(255, 136, 0);
+    color: white;
+    font-style: italic;
+    text-align: center;
+    margin: 4vmax 1vmin 1vmin;
+}
+
+@media (max-width: 1320px) {
     body {
-        height: 100vh;
         border: none;
+    }
+    nav {
+        top: 0;
     }
     nav,
     #menu-toggle:checked ~ .navigation li {
@@ -207,8 +232,8 @@ option[value=""] {
     }
     .navigation {
         position: absolute;
-        top: 6vmin;
-        margin-top: 67px;
+        top: 0;
+        margin-top: 6px;
         left: 0;
         flex-direction: column;
         width: 100%;
@@ -234,18 +259,18 @@ option[value=""] {
         padding: 0.5em 0;
         width: 100%;
         color: white;
-        background-color: orange;
+        background-color: rgb(255, 136, 0);
     }
     .navigation > li:not(:last-child) {
         border-bottom: 1px solid white;
     }
-    .content {
+    main {
         width: 100%;
     }
-    .text {
-        font-size: 0.8rem;
+    p {
+        margin: 10vmin;
     }
-    .copyright {
-        font-size: 0.5rem;
+    footer {
+        font-size: 0.75rem;
     }
-}*/
+}
