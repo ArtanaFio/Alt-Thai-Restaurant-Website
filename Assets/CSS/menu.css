@@ -14,7 +14,7 @@ body {
     background-image: url("../../Images/white_flowers.png"), linear-gradient(120deg, #ffbb00, white);
     background-repeat:repeat, no-repeat;
     background-size: 50%, cover;
-    background-color: #ffc000;
+    background-color: rgb(255, 192, 0);
     border: 3vmin double orange;
     display: flex;
     flex-direction: column; 

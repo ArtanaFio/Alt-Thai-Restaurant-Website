@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
     <head>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Crystal Thai - Menu</title>
-        <link rel="stylesheet" href="CSS_Files/lunch.css">
+        <title>Crystal Thai &#8211 Lunch Menu</title>
+        <link rel="stylesheet" href="../Assets/CSS/lunch.css">
     </head>
     <body>
         <nav>
@@ -13,28 +13,28 @@
             </label>
             <ul class="navigation">
                 <li><a class="links" href="../index.html">Home</a></li>
-                <li><a class="links" href="about.html">About Us</a></li>
-                <li><a class="links" href="menu.html">Menu</a></li>
-                <li><a class="links" href="contact.html">Contact</a></li>
-                <li><a class="links" href="location.html">Location</a></li>
-                <li><a class="links" href="faq.html">FAQ</a></li>
+                <li><a class="links" href="../index.html#about">About Us</a></li>
+                <li><a class="links" href="#menu-top">Menu</a></li>
+                <li><a class="links" href="../index.html#hours">Hours</a></li>
+                <li><a class="links" href="../index.html#location">Location</a></li>
+                <li><a class="links" href="../index.html#contact">Contact</a></li>
+                <li><a class="links" href="../index.html#FAQ">FAQ</a></li>
             </ul>
         </nav>
         <img class="title-image" src="../Images/Clear CT Logo.png" alt="Crystal Thai: Authentic Thai Cuisine">
-        <div class="content">
-            <div class="header">Soups
-                <br><div class="note">Made fresh to order</div>
+        <main>
+            <div class="header">
+                <h1 class="heading">Soups</h1>
+                <div class="note">Made fresh to order</div>
             </div>
-            <br>
             <div class="text">
-                <p class="align-center">Please note that the lunch menu 
-                    is only available Tuesday through Thursday <br>from 12 
-                    to 3 pm while the dinner menu is available during all 
-                    business hours.
-                </p>
+                <div class="menu-note">
+                    <p>The <strong>lunch menu is only available Tuesday &#8211 Thursday, 12 &#8211 3 pm</strong>.</p>
+                    <p>The dinner menu is available during all business hours.</p>
+                </div>
                 <div class="dropbox">
                     <p>Select your menu:</p>
-                    <select id="menu" onchange="window.location.href=this.value;">
+                    <select title="menu-options" id="menu" onchange="window.location.href=this.value;">
                         <option value="" class="menus">OPTIONS</option>
                         <option value="lunch.html" class="menus">Lunch</option>
                         <option value="dinner.html" class="menus">Dinner</option>
@@ -45,18 +45,17 @@
                 <div class="lunch-menu">
                     <div class="dropbox">
                         <p class="diff-menu">Select your category:</p>
-                            <select id="categories" onchange="window.location.href=this.value;">
-                                <option value="" class="cat-opt">Categories</option>
-                                <option value="L-appetizers.html"class="cat-opt">Appetizers</option>
-                                <option value="L-salads.html"class="cat-opt">Salads</option>
-                                <option value="L-soups.html"class="cat-opt">Soups</option>
-                                <option value="L-entrees.html"class="cat-opt">Lunch Entrees</option>
-                                <option value="L-desserts.html"class="cat-opt">Desserts</option>
-                                <option value="L-beverages.html"class="cat-opt">Beverages</option>
-                            </select>
+                        <select title="category-options" id="categories" onchange="window.location.href=this.value;">
+                            <option value="" class="cat-opt">Categories</option>
+                            <option value="L-appetizers.html"class="cat-opt">Appetizers</option>
+                            <option value="L-salads.html"class="cat-opt">Salads</option>
+                            <option value="L-soups.html"class="cat-opt">Soups</option>
+                            <option value="L-entrees.html"class="cat-opt">Lunch Entrees</option>
+                            <option value="L-desserts.html"class="cat-opt">Desserts</option>
+                            <option value="L-beverages.html"class="cat-opt">Beverages</option>
+                        </select>
                     </div>
                 </div>
-                <br>
                 <div class="food-left">
                     <div class="item">
                         <div class="name">Tom Yum<span><img class="chili" alt="this item is spicy" src="../Images/chili.png"></span></div>
@@ -70,7 +69,6 @@
                             <li>Mix Vegetables...$8.45</li>
                             <li>Shrimp...$9.45</li>
                         </ul>
-                        
                     </div>
                     <div class="item">
                         <div class="name">Tom Ka<span><img class="chili" alt="this item is spicy" src="../Images/chili.png"></span></div>
@@ -84,7 +82,6 @@
                             <li>Mix Vegetables...$8.45</li>
                             <li>Shrimp...$9.45</li>
                         </ul> 
-                        
                     </div>
                     <div class="item">
                         <div class="name">Wonton Soup...$7.45</div>
@@ -111,10 +108,13 @@
                         <p class="sub-description">*Can be substituted with a vegan broth; vegan broth will not be spicy unless requested</p>
                     </div>
                 </div>
+                <div class="bottom-note">
+                    <p>Please notify us of any food allergies, as some ingredients may not be listed. <b>Every item has the possibility of containing traces of peanuts</b>, although we try our best to avoid cross-contamination.</p> 
+                    <p>There will be a <b>20% gratuity fee for groups of 5 or more</b> dining in. Please reserve tables for groups larger than 8 people including children.</p>
+                    <p><span><img class="chili-large" alt="this item is spicy" src="../Images/chili.png"></span> denotes that the menu item is spicy by default. <b>Spice-levels ranging between 1 and 5 stars</b> can be chosen for these and other menu items, or notify your server you want mild or not spicy.</p>
+                </div>
             </div>
-        </div>
-        <div class="copyright">
-            Copyright &#169 Tathawee Inc. 2023
-        </div>
+        </main>
+        <footer>Copyright &#169 Tathawee Inc. 2024</footer>
     </body>
 </html>
