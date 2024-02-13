@@ -158,6 +158,7 @@ h1,
 }
 
 .menu-note {
+    width: 90%;
     font-style: italic;
     font-family: 'Handlee';
     margin: 5vmin 0;
@@ -227,6 +228,11 @@ main ul {
 
 .chili {
     width: 1rem;
+    height: auto;
+}
+
+.chili-large {
+    width: 1.5rem;
     height: auto;
 }
 

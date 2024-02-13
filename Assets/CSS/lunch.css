@@ -172,6 +172,7 @@ main {
 
 .menu-note,
 .bottom-note {
+    width: 90%;
     font-style: italic;
     font-family: 'Handlee';
     margin: 5vmin 0;
