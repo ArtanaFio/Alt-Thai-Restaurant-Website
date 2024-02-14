@@ -26,7 +26,7 @@
         <main>
             <div class="header">
                 <h1 class="heading">Appetizers</h1>
-                <div class="note">Extra dipping sauce $0.50 each</div>
+                <div class="header-note">Extra dipping sauce $0.50 each</div>
             </div>
             <div class="text">
                 <div class="menu-note">
@@ -36,26 +36,24 @@
                 <div class="dropbox">
                     <p>Select your menu:</p>
                     <select title="menu-options" id="menu" onchange="window.location.href=this.value;">
-                            <option value="">OPTIONS</option>
-                            <option value="lunch.html" class="menus">Lunch</option>
-                            <option value="dinner.html" class="menus">Dinner</option>
-                            <option value="catering.html" class="menus">Catering</option>
-                        </select>
+                        <option value="" class="menu-opt">OPTIONS</option>
+                        <option value="lunch.html" class="menus">Lunch</option>
+                        <option value="dinner.html" class="menus">Dinner</option>
+                        <option value="catering.html" class="menus">Catering</option>
+                    </select>
                 </div>
                 <div class="divider"></div>
-                <div class="lunch-menu">
-                    <div class="dropbox">
-                        <p class="diff-menu" >Select your category:</p>
-                            <select title="category-options" id="categories" onchange="window.location.href=this.value;">
-                                <option value="">Categories</option>
-                                <option value="L-appetizers.html" class="cat-opt">Appetizers</option>
-                                <option value="L-salads.html" class="cat-opt">Salads</option>
-                                <option value="L-soups.html" class="cat-opt">Soups</option>
-                                <option value="L-entrees.html" class="cat-opt">Lunch Entrees</option>
-                                <option value="L-desserts.html" class="cat-opt">Desserts</option>
-                                <option value="L-beverages.html" class="cat-opt">Beverages</option>
-                            </select>
-                    </div>
+                <div class="dropbox">
+                    <p class="select-category" >Select your category:</p>
+                    <select title="category-options" id="categories" onchange="window.location.href=this.value;">
+                        <option value="" class="cat-opt">CATEGORIES</option>
+                        <option value="L-appetizers.html" class="cat-opt">Appetizers</option>
+                        <option value="L-salads.html" class="cat-opt">Salads</option>
+                        <option value="L-soups.html" class="cat-opt">Soups</option>
+                        <option value="L-entrees.html" class="cat-opt">Lunch Entrees</option>
+                        <option value="L-desserts.html" class="cat-opt">Desserts</option>
+                        <option value="L-beverages.html" class="cat-opt">Beverages</option>
+                    </select>
                 </div>
                 <div class="food">
                     <div class="food-left">

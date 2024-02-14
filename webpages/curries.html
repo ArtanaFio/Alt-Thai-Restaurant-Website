@@ -25,8 +25,8 @@
         <img class="title-image" src="../Images/Clear CT Logo.png" alt="Crystal Thai: Authentic Thai Cuisine">
         <main>
             <div class="header">
-                <div class="heading">Curries</div>
-                <div class="note">All curries are served with quality white jasmine rice</div>
+                <h1 class="heading">Curries</h1>
+                <div class="header-note">All curries are served with quality white jasmine rice</div>
             </div>
             <div class="text">
                 <div class="menu-note">
@@ -36,35 +36,32 @@
                 <div class="dropbox">
                     <p>Select your menu:</p>
                     <select title="menu-options" id="menu" onchange="window.location.href=this.value;">
-                        <option value="" class="menus">OPTIONS</option>
+                        <option value="" class="menu-opt">OPTIONS</option>
                         <option value="lunch.html" class="menus">Lunch</option>
                         <option value="dinner.html" class="menus">Dinner</option>
                         <option value="catering.html" class="menus">Catering</option>
                     </select>
                 </div>
                 <div class="divider"></div>
-                <div class="dinner-menu">
-                    <div class="dropbox">
-                        <p class="diff-menu">Select your category:</p>
-                            <select title="category-options" id="categories" onchange="window.location.href=this.value;">
-                                <option value="" class="cat-opt">Categories</option>
-                                <option value="D-appetizers.html" class="cat-opt">Appetizers</option>
-                                <option value="D-salads.html" class="cat-opt">Salads</option>
-                                <option value="D-soups.html" class="cat-opt">Soups</option>
-                                <option value="house-specialties.html" class="cat-opt">House Specialties</option>
-                                <option value="D-entrees.html" class="cat-opt">Entrees</option>
-                                <option value="curries.html" class="cat-opt">Curries</option>
-                                <option value="noodles-rice.html" class="cat-opt">Noodles & Fried Rice</option>
-                                <option value="D-desserts.html" class="cat-opt">Desserts</option>
-                                <option value="D-beverages.html" class="cat-opt">Beverages</option>
-                            </select>
-                    </div>
+                <div class="dropbox">
+                    <p class="select-category">Select your category:</p>
+                    <select title="category-options" id="categories" onchange="window.location.href=this.value;">
+                        <option value="" class="cat-opt">CATEGORIES</option>
+                        <option value="D-appetizers.html" class="cat-opt">Appetizers</option>
+                        <option value="D-salads.html" class="cat-opt">Salads</option>
+                        <option value="D-soups.html" class="cat-opt">Soups</option>
+                        <option value="house-specialties.html" class="cat-opt">House Specialties</option>
+                        <option value="D-entrees.html" class="cat-opt">Entrees</option>
+                        <option value="curries.html" class="cat-opt">Curries</option>
+                        <option value="noodles-rice.html" class="cat-opt">Noodles & Fried Rice</option>
+                        <option value="D-desserts.html" class="cat-opt">Desserts</option>
+                        <option value="D-beverages.html" class="cat-opt">Beverages</option>
+                    </select>
                 </div>
-                <br>
-                <div class="top-section">
+                <div class="menu-note">
                     <p>Curries with mixed vegetables or tofu are made vegan unless otherwise requested.</p>
-                    <p>Cost of adding extra:</p>
-                    <ul class="protein-list">
+                    <p class="p2">Cost of adding extra:</p>
+                    <ul class="extra-cost">
                         <li>Extra chicken or beef...$3.50</li>
                         <li>Extra shrimp...$5.00</li>
                         <li>Extra scallop...$6.00</li>
@@ -74,58 +71,60 @@
                         <li>Extra noodles $3.00</li>
                     </ul>
                 </div>
-                <div class="food-left">
-                    <div class="item">
-                        <div class="name">Red Curry<span><img class="chili" alt="This item is spicy." src="../Images/chili.png"></span></div>
-                        <p class="description">Red curry paste cooked in coconut milk with bell pepper, bamboo shoot, and sweet basil.</p>
-                        <ul class="protein">
-                            <li>Mixed Vegetables...$16.50</li>
-                            <li>Chicken...$16.95</li>
-                            <li>Beef...$16.95</li>
-                            <li>Tofu...$16.95</li>
-                            <li>Shrimp...$18.95</li>
-                            <li>Scallop...$18.95</li>
-                        </ul> 
-                    </div>
-                    <div class="item">
-                        <div class="name">Green Curry<span><img class="chili" alt="This item is spicy." src="../Images/chili.png"></span></div>
-                        <p class="description">Green curry paste cooked in coconut milk with bell pepper, eggplant, and sweet basil. Subtly 
-                            spicier than the other curries.
-                        </p>
-                        <ul class="protein">
-                            <li>Mixed Vegetables...$16.50</li>
-                            <li>Chicken...$16.95</li>
-                            <li>Beef...$16.95</li>
-                            <li>Tofu...$16.95</li>
-                            <li>Shrimp...$18.95</li>
-                            <li>Scallop...$18.95</li>
-                        </ul>
-                    </div>
-                    <div class="item">
-                        <div class="name">Panang Curry<span><img class="chili" alt="This item is spicy." src="../Images/chili.png"></span></div>
-                        <p class="description">Panang curry paste cooked in coconut milk with peanut sauce, crushed peanuts, bell pepper, sweet 
-                            basil, and kaffir leaves.
-                        </p>
-                        <ul class="protein">
-                            <li>Mixed Vegetables...$16.50</li>
-                            <li>Chicken...$16.95</li>
-                            <li>Beef...$16.95</li>
-                            <li>Tofu...$16.95</li>
-                            <li>Shrimp...$18.95</li>
-                            <li>Scallop...$18.95</li>
-                        </ul>
-                    </div>
-                    <div class="item">
-                        <div class="name">Massaman Curry</div>
-                        <p class="description">Massaman curry paste cooked in coconut milk with potato, onions, and whole roasted peanuts.</p>
-                        <ul class="protein">
-                            <li>Mixed Vegetables...$16.50</li>
-                            <li>Chicken...$16.95</li>
-                            <li>Beef...$16.95</li>
-                            <li>Tofu...$16.95</li>
-                            <li>Shrimp...$18.95</li>
-                            <li>Scallop...$18.95</li>
-                        </ul>
+                <div class="food">
+                    <div class="food-left">
+                        <div class="item">
+                            <div class="name">Red Curry<span><img class="chili" alt="This item is spicy." src="../Images/chili.png"></span></div>
+                            <p class="description">Red curry paste cooked in coconut milk with bell pepper, bamboo shoot, and sweet basil.</p>
+                            <ul class="protein">
+                                <li>Mixed Vegetables...$16.50</li>
+                                <li>Chicken...$16.95</li>
+                                <li>Beef...$16.95</li>
+                                <li>Tofu...$16.95</li>
+                                <li>Shrimp...$18.95</li>
+                                <li>Scallop...$18.95</li>
+                            </ul> 
+                        </div>
+                        <div class="item">
+                            <div class="name">Green Curry<span><img class="chili" alt="This item is spicy." src="../Images/chili.png"></span></div>
+                            <p class="description">Green curry paste cooked in coconut milk with bell pepper, eggplant, and sweet basil. Subtly 
+                                spicier than the other curries.
+                            </p>
+                            <ul class="protein">
+                                <li>Mixed Vegetables...$16.50</li>
+                                <li>Chicken...$16.95</li>
+                                <li>Beef...$16.95</li>
+                                <li>Tofu...$16.95</li>
+                                <li>Shrimp...$18.95</li>
+                                <li>Scallop...$18.95</li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <div class="name">Panang Curry<span><img class="chili" alt="This item is spicy." src="../Images/chili.png"></span></div>
+                            <p class="description">Panang curry paste cooked in coconut milk with peanut sauce, crushed peanuts, bell pepper, sweet 
+                                basil, and kaffir leaves.
+                            </p>
+                            <ul class="protein">
+                                <li>Mixed Vegetables...$16.50</li>
+                                <li>Chicken...$16.95</li>
+                                <li>Beef...$16.95</li>
+                                <li>Tofu...$16.95</li>
+                                <li>Shrimp...$18.95</li>
+                                <li>Scallop...$18.95</li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <div class="name">Massaman Curry</div>
+                            <p class="description">Massaman curry paste cooked in coconut milk with potato, onions, and whole roasted peanuts.</p>
+                            <ul class="protein">
+                                <li>Mixed Vegetables...$16.50</li>
+                                <li>Chicken...$16.95</li>
+                                <li>Beef...$16.95</li>
+                                <li>Tofu...$16.95</li>
+                                <li>Shrimp...$18.95</li>
+                                <li>Scallop...$18.95</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="bottom-note">

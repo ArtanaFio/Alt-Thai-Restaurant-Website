@@ -140,7 +140,7 @@ main {
     margin: 0;
 }
 
-.note {
+.header-note {
     font-size: 1.5vmax;
     margin-top: 2vmin;
     color: rgb(209, 102, 1);
@@ -186,9 +186,11 @@ p {
     font-size: 1rem;
 }
 
-.menu-note p {
+.menu-note p,
+.bottom-note p {
     margin: 0;
     color: brown;
+    font-size: 0.9rem;
 }
 
 strong {
@@ -200,19 +202,17 @@ strong {
 .dropbox {
     display: flex;
     flex-direction: column;
+    width: 300px;
+}
+
+select {
+    font-size: 0.8rem;
+    width: 100%;
 }
 
 select:hover {
     box-shadow: 5px 5px 10px rgba(255, 166, 0, 0.671), -5px -5px 10px rgba(255, 166, 0, 0.671), 5px -5px 10px rgba(255, 166, 0, 0.671), -5px 5px 10px rgba(255, 166, 0, 0.671);
-}
-
-#menu {
-    font-size: 0.8rem;
     background-color: white;
-}
-
-#categories {
-    font-size: 0.7rem;
 }
 
 option[value] {
@@ -225,34 +225,25 @@ option[value=""] {
     background-color: rgb(207, 175, 114);
 }
 
-.menus {
-    font-size: 0.8rem;
+.select-category {
+    color: rgb(228, 121, 0);
 }
 
-.cat-opt {
-    font-size: 0.7rem;
-}
-
-.diff-menu {
-    color: orangered;
+.p2 {
+    padding-top: 0.5rem;
     font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-#categories {
-    font-size: 20px;
-}
-
-.top-section {
-    text-align: center;
-    width: 60%;
-}
-
-.protein-list {
+.extra-cost {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    font-size: 3vmin;
-    color: rgb(209, 102, 1);
+    font-size: 0.75rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .food {
