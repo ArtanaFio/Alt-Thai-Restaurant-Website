@@ -134,14 +134,14 @@ main {
 }
 
 .heading {
-    font-size: 5vmax;
+    font-size: 5.5vmax;
     text-shadow: 0.5vmin 0.25vmin 3px brown;
     color: rgb(255, 136, 0);
     margin: 0;
 }
 
 .header-note {
-    font-size: 1.5vmax;
+    font-size: 2vmax;
     margin-top: 2vmin;
     color: rgb(209, 102, 1);
     font-style: italic;
@@ -160,8 +160,8 @@ main {
     align-items: center;
     justify-content: center;
     padding: 2vmin;
-    padding-bottom: 7vmin;
-    margin-bottom: 5vmax;
+    /*padding-bottom: 7vmin;
+    margin-bottom: 5vmax;*/
 }
 
 .divider {
@@ -175,6 +175,8 @@ main {
     width: 90%;
     font-style: italic;
     font-family: 'Handlee';
+    color: brown;
+    font-size: 0.9rem;
     margin: 5vmin 0;
     border: 5px double brown;
     padding: 3vmin;
@@ -186,11 +188,8 @@ p {
     font-size: 1rem;
 }
 
-.menu-note p,
-.bottom-note p {
+.menu-note p {
     margin: 0;
-    color: brown;
-    font-size: 0.9rem;
 }
 
 strong {
@@ -227,6 +226,7 @@ option[value=""] {
 
 .select-category {
     color: rgb(228, 121, 0);
+    font-size: 0.9rem;
 }
 
 .p2 {
@@ -250,6 +250,7 @@ option[value=""] {
     display: flex;
     flex-wrap: wrap;
     margin: 5vmin 0;
+    width: 100%;
 }
 
 .food-left,
@@ -273,24 +274,33 @@ option[value=""] {
     text-align: left;
 }
 
-.chili {
-    width: 3vmin;
-    height: auto;
-}
-
-.chili-large {
-    width: 1.5rem;
-    height: auto;
+.subject {
+    display: flex;
+    font-size: 0.8rem;
 }
 
 .name {
-    font-size: 0.8rem;
     font-weight: bold;
+}
+
+.item-note {
+    font-weight: normal;
+}
+
+.ellipses {
+    flex: 1;
+    border-bottom: 3.5px dotted rgba(165, 42, 42, 0.5);
+    margin: 5px;
+}
+
+.price,
+.protein {
+    color: rgb(209, 102, 1);
 }
 
 .sub-description,
 .protein {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
 }
 
 .description {
@@ -300,15 +310,29 @@ option[value=""] {
 
 .protein  {
     margin-top: 0;
-    padding: 0;
-    padding-left: 2rem;
+    padding: 0 2rem;
     list-style: none;
+}
+
+.protein li {
+    display: flex;
 }
 
 .sub-description {
     margin: 0;
     font-style: italic;
     padding-left: 1rem;
+    font-weight: bold;
+}
+
+.chili {
+    width: 3vmin;
+    height: auto;
+}
+
+.chili-large {
+    width: 1.5rem;
+    height: auto;
 }
 
 footer {
@@ -376,14 +400,8 @@ footer {
     .text {
         padding: 0;
     }
-    .note {
-        font-size: 0.5rem;
-    }
     .protein-list {
         font-size: 0.53rem;
-    }
-    .text {
-        font-size: 0.8rem;
     }
     .item {
         width: 90vw;
