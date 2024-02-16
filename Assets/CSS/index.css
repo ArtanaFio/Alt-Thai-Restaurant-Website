@@ -343,6 +343,15 @@ p span {
     color: white;
 }
 
+details > p > a {
+    color: rgb(255, 217, 0);
+}
+
+details > p > a:hover {
+    color: orange;
+    text-decoration: none;
+}
+
 .copyright {
     font-size: 3vmin;
     background-color: orange;
