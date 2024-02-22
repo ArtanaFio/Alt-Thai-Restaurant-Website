@@ -237,14 +237,14 @@ p {
     font-style: italic;
 }
 
-.schedule {  
+.schedule, .box-image {  
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 35vmax;
     padding: 1rem;
     border-radius: 30px;
-    flex: 1;
+    flex: 2;
     background: #facc4f;
     border: 10px double orange;
     box-shadow: 0.25vmin 0.25vmin 1vmin #c59100;
@@ -266,6 +266,15 @@ p {
     display:inline-block;
 }
 
+.schedule-image {
+    flex: 3;
+    width:65vmin;
+    height: 60vmin;
+    border-radius: 20px;
+    box-shadow: 0.25vmin 0.25vmin 1vmin #5e4500;
+    align-self: center;
+}
+
 .image {
     flex: 1;
     border-radius: 20px;
@@ -284,6 +293,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     gap: 5vmax;
+    overflow: hidden;
 }
 
 .row {
