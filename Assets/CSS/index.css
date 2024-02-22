@@ -20,6 +20,63 @@ body {
     flex-direction: column; 
 }
 
+.modal {
+    display: none;
+    position: absolute;
+    align-self: center;
+    background-color: rgb(255, 247, 232);
+    box-shadow: 5px 5px 10px brown;
+    width: 90vw;
+    height: 95vh;
+    padding: 5vmin;
+    overflow: hidden;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.close {
+    font-size: 2rem;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.close:hover {
+    color: orange;
+}
+
+.close, .modal-content p {
+    color:rgb(209, 102, 1);
+    font-weight: bold;
+}
+
+.spring-rolls {
+    width: 30vw;
+    height: auto;
+    transform: rotate(-90deg);
+    border-radius: 10px;
+    margin: 0;
+    margin-top: -4vw;
+}
+
+.modal-content h1 {
+    font-size: 7vmin;
+    background-color: transparent;
+    text-shadow: 0.25vmin 0.1vmin 3px rgb(216, 104, 0);
+    padding: 0;
+    margin: 0;
+    margin-top: -0.5rem;
+}
+
+.modal-content p {
+    margin: 0;
+    margin-top: -4vw;
+}
+
 nav {
     position: sticky;
     margin-top: 3vmax;
@@ -180,7 +237,7 @@ p {
     font-style: italic;
 }
 
-.box-image {  
+.schedule {  
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -191,6 +248,18 @@ p {
     background: #facc4f;
     border: 10px double orange;
     box-shadow: 0.25vmin 0.25vmin 1vmin #c59100;
+}
+
+.schedule p:first-of-type {
+    font-weight: bold;
+    font-size: 1.3rem;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+.schedule p:first-of-type span {
+    text-decoration: underline;
+    color: white;
 }
 
 .group-image {
@@ -364,6 +433,14 @@ details > p > a:hover {
 @media (max-width: 1320px) {
     body {
         border: none;
+    }
+    .spring-rolls {
+        width: 275px;
+        height: auto;
+        margin: 0;
+    }
+    .modal-content p {
+        margin: 0;
     }
     nav {
         top: 0;
