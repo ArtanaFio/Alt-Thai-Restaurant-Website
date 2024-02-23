@@ -55,12 +55,10 @@ body {
 }
 
 .spring-rolls {
-    width: 30vw;
+    width: 25vw;
     height: auto;
-    transform: rotate(-90deg);
     border-radius: 10px;
-    margin: 0;
-    margin-top: -4vw;
+    box-shadow: 7px 7px 20px orange, -7px 7px 20px orange, 7px -7px 20px orange, -7px -7px 20px orange;
 }
 
 .modal-content h1 {
@@ -68,13 +66,7 @@ body {
     background-color: transparent;
     text-shadow: 0.25vmin 0.1vmin 3px rgb(216, 104, 0);
     padding: 0;
-    margin: 0;
     margin-top: -0.5rem;
-}
-
-.modal-content p {
-    margin: 0;
-    margin-top: -4vw;
 }
 
 nav {
@@ -444,12 +436,12 @@ details > p > a:hover {
     body {
         border: none;
     }
+    .modal-content h1 {
+        font-size: 1.25rem;
+    }
     .spring-rolls {
         width: 275px;
         height: auto;
-        margin: 0;
-    }
-    .modal-content p {
         margin: 0;
     }
     nav {
@@ -527,6 +519,9 @@ details > p > a:hover {
     }
     .image {
         margin-top: 1rem;
+    }
+    .shift {
+        padding-left: 0;
     }
     .map-address {
         font-size: 0.9rem;
