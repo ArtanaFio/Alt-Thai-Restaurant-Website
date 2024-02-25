@@ -20,6 +20,55 @@ body {
     flex-direction: column; 
 }
 
+.modal {
+    position: absolute;
+    top: 15vh;
+    align-self: center;
+    background-color: black;
+    /*background-color: rgb(255, 247, 232);*/
+    box-shadow: 5px 5px 10px brown;
+    padding: 1vmin;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.close {
+    font-size: 2rem;
+    cursor: pointer;
+    align-self: flex-end;
+    /*color:rgb(209, 102, 1);*/
+    font-weight: bold;
+    color: white;
+}
+
+.close:hover {
+    color: orangered;
+}
+
+.modal-content h3 {
+    text-align: center;
+    font-weight: lighter;
+    border: 5px solid orangered;
+    padding: 4vmin;
+}
+
+.modal-content p {
+    font-family: 'Handlee';
+    margin: 0;
+}
+
+.underline {
+    text-decoration: underline;
+    font-weight: bold;
+    color: orangered;
+}
+
 nav {
     position: sticky;
     margin-top: 3vmax;

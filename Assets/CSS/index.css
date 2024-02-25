@@ -437,12 +437,17 @@ details > p > a:hover {
         border: none;
     }
     .modal-content h1 {
-        font-size: 1.25rem;
+        font-size: 1.15rem;
+        margin: 0.75rem;
     }
     .spring-rolls {
         width: 275px;
         height: auto;
-        margin: 0;
+        margin-bottom: 0;
+    }
+    .modal-content p {
+        margin-top: 0.75rem;
+        font-size: 0.8rem;
     }
     nav {
         top: 0;
@@ -519,6 +524,9 @@ details > p > a:hover {
     }
     .image {
         margin-top: 1rem;
+    }
+    .weekday {
+        font-size: 0.8rem;
     }
     .shift {
         padding-left: 0;
