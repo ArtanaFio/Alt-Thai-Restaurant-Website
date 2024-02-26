@@ -183,13 +183,32 @@ main {
     background-color:  rgb(252, 201, 107);
 }
 
+.menu-note {
+    display: flex;
+    flex-direction: column;
+}
+
+.extra-cost {
+    width: 10rem;
+    align-self: center;
+}
+.extra-cost li {
+    display: flex;
+}
+
+.dots {
+    flex: 1;
+    border-bottom: 3.5px dotted brown;
+    margin: 5px;
+}
+
 p {
     text-align: center;
     font-size: 1rem;
 }
 
 .menu-note p {
-    margin: 0;
+    margin: 0.25rem;
 }
 
 strong {
