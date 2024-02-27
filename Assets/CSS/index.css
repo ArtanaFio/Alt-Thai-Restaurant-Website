@@ -436,9 +436,14 @@ details > p > a:hover {
     body {
         border: none;
     }
+    .modal {
+        margin: 0;
+        padding: 0;
+    }
     .modal-content h1 {
         font-size: 1.15rem;
         margin: 0.75rem;
+        margin-top: -0.5rem;
     }
     .spring-rolls {
         width: 275px;
@@ -448,6 +453,9 @@ details > p > a:hover {
     .modal-content p {
         margin-top: 0.75rem;
         font-size: 0.8rem;
+    }
+    .close {
+        margin-right: 0.5rem;
     }
     nav {
         top: 0;
