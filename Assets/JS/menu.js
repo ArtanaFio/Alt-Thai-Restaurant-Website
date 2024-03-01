@@ -6,7 +6,7 @@ copyrightYear.textContent = new Date().getFullYear();
 
 /* Remove modal from screen */
 
-const popup = document.getElementById("alert-hours");
+const popup = document.querySelector(".modal");
 const closeButton = document.querySelector(".close");
 
 closeButton.addEventListener('click', () => {
