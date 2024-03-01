@@ -363,6 +363,10 @@ footer {
     margin: 4vmax 1vmin 1vmin;
 }
 
+.unused {
+    display: none;
+}
+
 @media (max-width: 1320px) {
     body {
         justify-content: space-between;

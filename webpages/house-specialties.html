@@ -6,6 +6,8 @@
         <link rel="icon" type="image" href="../Images/CT_Icon.png">
         <link rel="stylesheet" href="../Assets/CSS/dinner.css">
         <script src="../Assets/JS/menu.js" defer></script>
+        <script src="../Assets/JS/add-on_prices.js" defer></script>
+        <script src="../Assets/JS/house_specialties_prices.js" defer></script>
     </head>
     <body>
         <nav>
@@ -59,51 +61,59 @@
                     </select>
                 </div>
                 <div class="menu-note">
-                    <p>All house specialties, excluding pineapple fried rice, are served with quality white jasmine rice. <span class="substitute-noodles">$1.00</span> upcharge to substitute with rice noodles. Cannot substitute with fried rice.</p> 
+                    <p>All house specialties, excluding pineapple fried rice, are served with quality white jasmine rice. <span class="sub-noodles"></span> upcharge to substitute with rice noodles. Cannot substitute with fried rice.</p> 
+                    <p class="p2">Cost of adding:</p>
                     <ul class="extra-cost">
-                        <li class="extra-rice"><span class="extra">Extra jasmine rice</span><span class="dots"></span><span class="upcharge">$2.50</span></li>
+                        <li><span class="extra">Extra chicken or beef</span><span class="dots"></span><span class="upcharge extra-meat"></span></li>
+                        <li><span class="extra">Extra shrimp</span><span class="dots"></span><span class="upcharge extra-shrimp"></span></li>
+                        <li><span class="extra">Extra scallop</span><span class="dots"></span><span class="upcharge extra-scallop"></span></li>
+                        <li><span class="extra">Extra tofu</span><span class="dots"></span><span class="upcharge extra-tofu"></span></li>
+                        <li><span class="extra">Extra jasmine rice</span><span class="dots"></span><span class="upcharge extra-rice"></span></li>
+                    </ul>
+                    <ul class="unused">
+                        <li><span class=""></span></li>
+
                     </ul>
                 </div>
                 <div class="food">
                     <div class="food-left">
                         <div class="item">
-                            <div class="subject"><span class="name">Crystal Thai Seafood</span><span class="ellipses"></span><span class="price">$20.95</span></div>
+                            <div class="subject"><span class="name">Crystal Thai Seafood</span><span class="ellipses"></span><span class="price crystal-seafood"></span></div>
                             <p class="description">Sautéed shrimp, scallops, and mussels with fresh garlic, onions, and chili paste sauce, placed on 
-                                a bed of steamed broccoli. <br>Served with white jasmine rice.</p> 
+                                a bed of steamed broccoli.</p> 
                         </div>
                         <div class="item">
-                            <div class="subject"><span class="name">Pad Woon Sen</span><span class="ellipses"></span><span class="price">$16.95</span></div>
-                            <p class="description">Sautéed bean thread noodles with chicken, shrimp, carrots, celery, baby corn. <br>Served with white 
-                                jasmine rice.</p> 
+                            <div class="subject"><span class="name">Pad Woon Sen</span><span class="ellipses"></span><span class="price pad"></span></div>
+                            <p class="description">Sautéed bean thread noodles* with chicken, shrimp, carrots, celery, baby corn.</p> 
+                                <p class="sub-description">*extra noodles is <span class="extra-noodles"></span></p> 
                         </div>
                         <div class="item">
-                            <div class="subject"><span class="name">Sizzling Seafood</span><span class="ellipses"></span><span class="price">$21.95</span></div>
-                            <p class="description">Sautéed shrimp, scallops, and mussels with onion, sweet basil leaves in a brown sauce. <br>Served with 
-                                white jasmine rice.</p> 
+                            <div class="subject"><span class="name">Sizzling Seafood</span><span class="ellipses"></span><span class="price sizzling"></span></div>
+                            <p class="description">Sautéed shrimp, scallops, and mussels with onion, sweet basil leaves in a brown sauce.</p> 
                         </div>
                         <div class="item">
-                            <div class="subject"><span class="name">Herbal Mussels</span><span class="ellipses"></span><span class="price">$18.95</span></div>
-                            <p class="description">New Zealand mussels sautéed in a fresh garlic, lemongrass, and sweet basil sauce. <br>Served with 
-                                white jasmine rice.</p> 
+                            <div class="subject"><span class="name">Herbal Mussels</span><span class="ellipses"></span><span class="price herbal"></span></div>
+                            <p class="description">New Zealand mussels sautéed in a fresh garlic, lemongrass, and sweet basil sauce.</p> 
                         </div>
                         <div class="item">
-                            <div class="subject"><span class="name">Crispy Fish Fillet with Chili Sauce</span><span class="ellipses"></span><span class="price">$20.95</span></div>
-                            <p class="description">Crispy fish fillet with a spicy sweet and sour sauce, garlic, onions, bell peppers and sweet basil.
-                                <br>Served with white jasmine rice.</p> 
+                            <div class="subject"><span class="name">Crispy Fish Fillet with Chili Sauce</span><span class="ellipses"></span><span class="price crispy"></span></div>
+                            <p class="description">Crispy fish fillet with a spicy sweet and sour sauce, garlic, onions, bell peppers and sweet basil.</p> 
                         </div>
                         <div class="item">
                             <div class="subject"><span class="name">Pineapple Fried Rice</span></div>
-                            <p class="description">Stir-fried rice with egg*, pineapple chunks, onions, peas, carrots, and cashew nuts* with your 
+                            <p class="description">Stir-fried rice* with egg*, pineapple chunks, onions, peas, carrots, and cashew nuts* with your 
                                 choice of:</p>
                             <ul class="protein">
-                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price">$17.95</span></li>
-                                <li><span class="name">Beef</span><span class="ellipses"></span><span class="price">$17.95</span></li>
-                                <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price">$17.95</span></li>
-                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price">$19.95</span></li>
-                                <li><span class="name">Scallops</span><span class="ellipses"></span><span class="price">$19.95</span></li>
+                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price mix-veg"></span></li>
+                                <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Beef</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price sea"></span></li>
+                                <li><span class="name">Scallops</span><span class="ellipses"></span><span class="price sea"></span></li>
                             </ul>
-                            <p class="sub-description">*Extra egg is $1.25, extra fried rice is $3.00, extra cashew nuts is $2.50</p> 
+                            <p class="sub-description">*Extra egg is <span class="extra-egg"></span></p>
+                            <p class="sub-description">*Extra fried rice is <span class="extra-fried-rice"></span></p>
+                            <p class="sub-description">*Extra cashew nuts is <span class="extra-cashews"></span></p> 
                         </div>
                     </div>
                 </div>

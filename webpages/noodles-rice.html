@@ -6,6 +6,9 @@
         <link rel="icon" type="image" href="../Images/CT_Icon.png">
         <link rel="stylesheet" href="../Assets/CSS/dinner.css">
         <script src="../Assets/JS/menu.js" defer></script>
+        <script src="../Assets/JS/add-on_prices.js" defer></script>
+        <script src="../Assets/JS/dinner_entree_prices.js" defer></script>
+
     </head>
     <body>
         <nav>
@@ -60,102 +63,114 @@
                 </div>
                 <div class="menu-note">
                     <p>Items with mixed vegetables or tofu are made with vegan sauce unless otherwise requested.</p>
-                    <p>All entrees are served with quality white jasmine rice. <span class="substitute-noodles">$1.00</span> upcharge to substitute with rice noodles. Cannot substitute with fried rice.</p>
+                    <p>All entrees are served with quality white jasmine rice. <span class="sub-noodles"></span> upcharge to substitute with rice noodles. Cannot substitute with fried rice.</p>
                     <p class="p2">Cost of adding:</p>
                     <ul class="extra-cost">
-                        <li class="extra-meat"><span class="extra">Extra chicken or beef</span><span class="dots"></span><span class="upcharge">$3.50</span></li>
-                        <li class="extra-shrimp"><span class="extra">Extra shrimp</span><span class="dots"></span><span class="upcharge">$5.00</span></li>
-                        <li class="extra-scallop"><span class="extra">Extra scallop</span><span class="dots"></span><span class="upcharge">$6.00</span></li>
-                        <li class="extra-tofu"><span class="extra">Extra tofu</span><span class="dots"></span><span class="upcharge">$3.00</span></li>
-                        <li class="extra-rice"><span class="extra">Extra jasmine rice</span><span class="dots"></span><span class="upcharge">$2.50</span></li>
-                        <li class="extra-egg"><span class="extra">Extra egg</span><span class="dots"></span><span class="upcharge">$1.25</span></li>
-                        <li class="extra-noodles"><span class="extra">Extra noodles</span><span class="dots"></span><span class="upcharge">$3.00</span></li>
+                        <li><span class="extra">Extra chicken or beef</span><span class="dots"></span><span class="upcharge extra-meat"></span></li>
+                        <li><span class="extra">Extra shrimp</span><span class="dots"></span><span class="upcharge extra-shrimp"></span></li>
+                        <li><span class="extra">Extra scallop</span><span class="dots"></span><span class="upcharge extra-scallop"></span></li>
+                        <li><span class="extra">Extra tofu</span><span class="dots"></span><span class="upcharge extra-tofu"></span></li>
+                    </ul>
+                    <ul class="unused">
+                        <li><span class="extra-rice"></span></li>
                     </ul>
                 </div>
                 <div class="food">
                     <div class="food-left">
                         <div class="item">
                             <div class="subject"><span class="name">Pad Thai</span></div>
-                            <p class="description">A traditional stir-fry Thai noodle dish made with thin rice noodles, egg, bean sprouts, and scallions in a perfect blend of sauces, served with crushed peanuts and a slice of lime.</p>
-                            <p class="sub-description">*Please indicate if you do not want egg.</p> 
-                                <ul class="protein">
-                                    <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price">$16.50</span></li>
-                                    <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Beef</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price">$18.95</span></li>
-                                    <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price">$18.95</span></li>
-                                    <li><span class="name">Seafood<span class="item-note">(shrimp, scallop, & mussel)</span></span><span class="ellipses"></span><span class="price">$20.95</span></li>
-                                </ul>
+                            <p class="description">A traditional stir-fry Thai noodle dish made with thin rice noodles*, egg*, bean sprouts, and scallions in a perfect blend of sauces, served with crushed peanuts and a slice of lime.</p>
+                            <ul class="protein">
+                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price mix-veg"></span></li>
+                                <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Beef</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price sea"></span></li>
+                                <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price sea"></span></li>
+                                <li><span class="name">Seafood<span class="item-note">(shrimp, scallop, & mussel)</span></span><span class="ellipses"></span><span class="price seafood"></span></li>
+                            </ul>
+                            <p class="sub-description">*Add extra noodles for <span class="extra-noodles"></span></p>
+                            <p class="sub-description">*Add extra egg for <span class="extra-egg"></span></p>
+                            <p class="sub-description">*Please notify us if you do not want egg.</p>
                         </div>
                         <div class="item">
                             <div class="subject"><span class="name">Drunken Noodles (Pad Kee Mao)<span><img alt="This item is spicy." class="chili" src="../Images/chili.png"></span></span></div>
-                            <p class="description">A traditional stir-fry noodle dish flavored with sweet basil and made with wide rice noodles, onion, bell pepper in a special brown sauce.</p>
+                            <p class="description">A traditional stir-fry noodle dish flavored with sweet basil and made with wide rice noodles*, onion, bell pepper in a special brown sauce.</p>
                             <ul class="protein">
-                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price">$16.50</span></li>
-                                    <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Beef</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price">$18.95</span></li>
-                                    <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price">$18.95</span></li>
+                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price mix-veg"></span></li>
+                                <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Beef</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price sea"></span></li>
+                                <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price sea"></span></li>
                             </ul>
+                            <p class="sub-description">*Add extra noodles for <span class="extra-noodles"></span></p>
                         </div>
                         <div class="item">
                             <div class="subject"><span class="name">Egg Noodles Platter</span></div>
                             <p class="description">Stir-fried egg noodles with mushroom, onions, baby corn, broccoli, carrots, and snow peas.</p>
-                            <p class="sub-description">*Contains egg.</p>
+                            <p class="sub-description">*Noodles made with egg.</p>
                             <ul class="protein">
-                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price">$16.50</span></li>
-                                    <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Beef</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price">$18.95</span></li>
-                                    <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price">$18.95</span></li>
+                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price mix-veg"></span></li>
+                                <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Beef</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price sea"></span></li>
+                                <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price sea"></span></li>
                             </ul>
+                            <p class="sub-description">Add extra noodles for <span class="extra-noodles"></span></p>
                         </div>
                         <div class="item">
-                            <div class="subject"><span class="name">Crystal Fried Rice</span><span class="ellipses"></span><span class="price">$20.95</span></div>
+                            <div class="subject"><span class="name">Crystal Fried Rice</span><span class="ellipses"></span><span class="price crystal-fried-rice"></span></div>
                             <p class="description">Stir-fried rice with egg, onion, carrot, pea, tomato, shrimp, and chicken.</p>
-                            <p class="sub-description">*Please indicate to server if you do not want egg.</p>
+                            <p class="sub-description">*Add extra fried rice for <span class="extra-fried-rice"></span></p>
+                            <p class="sub-description">*Add extra egg for <span class="extra-egg"></span></p>
+                            <p class="sub-description">*Please notify us if you do not want egg.</p>
                         </div>
                         <div class="item">
                             <div class="subject"><span class="name">Fried Rice</span></div>
-                            <p class="description">Stir-fried rice with egg, onion, carrot, pea, and tomato.</p>
-                            <p class="sub-description">*Please indicate if you do not want egg.</p>
+                            <p class="description">Stir-fried rice* with egg*, onion, carrot, pea, and tomato.</p>
                             <ul class="protein">
-                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price">$16.50</span></li>
-                                    <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Beef</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price">$18.95</span></li>
-                                    <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price">$18.95</span></li>
+                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price mix-veg"></span></li>
+                                <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Beef</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price sea"></span></li>
+                                <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price sea"></span></li>
                             </ul>
+                            <p class="sub-description">*Add extra fried rice for <span class="extra-fried-rice"></span></p>
+                            <p class="sub-description">*Add extra egg for <span class="extra-egg"></span></p>
+                            <p class="sub-description">*Please notify us if you do not want egg.</p>
                         </div>
                         <div class="item">
                             <div class="subject"><span class="name">Sweet Basil Fried Rice<span><img alt="This item is spicy." class="chili" src="../Images/chili.png"></span></span></div>
-                            <p class="description">Stir-fried rice with egg, sweet basil, bell pepper, onion, red chili flakes.</p>
-                            <p class="sub-description">*Please indicate if you do not want egg.</p>
+                            <p class="description">Stir-fried rice* with egg*, sweet basil, bell pepper, onion, red chili flakes.</p>
                             <ul class="protein">
-                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price">$16.50</span></li>
-                                    <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Beef</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price">$18.95</span></li>
-                                    <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price">$18.95</span></li>
+                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price mix-veg"></span></li>
+                                <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Beef</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price sea"></span></li>
+                                <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price sea"></span></li>
                             </ul>
+                            <p class="sub-description">*Add extra fried rice for <span class="extra-fried-rice"></span></p>
+                            <p class="sub-description">*Add extra egg for <span class="extra-egg"></span></p>
+                            <p class="sub-description">*Please notify us if you do not want egg.</p>
                         </div>
                         <div class="item">
                             <div class="subject"><span class="name">Soy Sauce Noodles (Pad See Elw)</span></div>
-                            <p class="description">A traditional stir-fry noodle dish flavored with a mildly sweet soy sauce and made with wide rice noodles, egg, and broccoli.</p>
-                            <p class="sub-description">*Please indicate if you do not want egg.</p>
+                            <p class="description">A traditional stir-fry noodle dish flavored with a mildly sweet soy sauce and made with wide rice noodles*, egg*, and broccoli.</p>
                             <ul class="protein">
-                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price">$16.50</span></li>
-                                <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                <li><span class="name">Beef</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price">$18.95</span></li>
-                                <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price">$18.95</span></li>
+                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price mix-veg"></span></li>
+                                <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Beef</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price sea"></span></li>
+                                <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price sea"></span></li>
                             </ul>
+                            <p class="sub-description">*Add extra noodles for <span class="extra-noodles"></span></p>
+                            <p class="sub-description">*Add extra egg for <span class="extra-egg"></span></p>
+                            <p class="sub-description">*Please notify us if you do not want egg.</p>
                         </div>
                     </div>
                 </div>

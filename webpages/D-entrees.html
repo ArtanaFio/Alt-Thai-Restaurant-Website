@@ -6,6 +6,7 @@
         <link rel="icon" type="image" href="../Images/CT_Icon.png">
         <link rel="stylesheet" href="../Assets/CSS/dinner.css">
         <script src="../Assets/JS/menu.js" defer></script>
+        <script src="../Assets/JS/add-on_prices.js" defer></script>
         <script src="../Assets/JS/dinner_entree_prices.js" defer></script>
     </head>
     <body>
@@ -62,16 +63,20 @@
                 </div>
                 <div class="menu-note">
                     <p>Items with mixed vegetables or tofu are made with vegan sauce unless otherwise requested.</p>
-                    <p>All entrees are served with quality white jasmine rice. <span class="substitute-noodles">$1.00</span> upcharge to substitute with rice noodles. Cannot substitute with fried rice.</p>
+                    <p>All entrees are served with quality white jasmine rice. <span class="sub-noodles"></span> upcharge to substitute with rice noodles. Cannot substitute with fried rice.</p>
                     <p class="p2">Cost of adding:</p>
                     <ul class="extra-cost">
-                        <li class="extra-meat"><span class="extra">Extra chicken or beef</span><span class="dots"></span><span class="upcharge">$3.50</span></li>
-                        <li class="extra-shrimp"><span class="extra">Extra shrimp</span><span class="dots"></span><span class="upcharge">$5.00</span></li>
-                        <li class="extra-scallop"><span class="extra">Extra scallop</span><span class="dots"></span><span class="upcharge">$6.00</span></li>
-                        <li class="extra-tofu"><span class="extra">Extra tofu</span><span class="dots"></span><span class="upcharge">$3.00</span></li>
-                        <li class="extra-rice"><span class="extra">Extra jasmine rice</span><span class="dots"></span><span class="upcharge">$2.50</span></li>
-                        <li class="extra-egg"><span class="extra">Extra egg</span><span class="dots"></span><span class="upcharge">$1.25</span></li>
-                        <li class="extra-noodles"><span class="extra">Extra noodles</span><span class="dots"></span><span class="upcharge">$3.00</span></li>
+                        <li><span class="extra">Extra chicken or beef</span><span class="dots"></span><span class="upcharge extra-meat"></span></li>
+                        <li><span class="extra">Extra shrimp</span><span class="dots"></span><span class="upcharge extra-shrimp"></span></li>
+                        <li><span class="extra">Extra scallop</span><span class="dots"></span><span class="upcharge extra-scallop"></span></li>
+                        <li><span class="extra">Extra tofu</span><span class="dots"></span><span class="upcharge extra-tofu"></span></li>
+                        <li><span class="extra">Extra jasmine rice</span><span class="dots"></span><span class="upcharge extra-rice"></span></li>
+                    </ul>
+                    <ul class="unused">
+                        <li><span class="extra-fried-rice"></span></li>
+                        <li><span class="extra-egg"></span></li>
+                        <li><span class="seafood"></span></li>
+                        <li><span class="crystal-fried-rice"></span></li>
                     </ul>
                 </div>
                 <div class="food">
@@ -80,85 +85,85 @@
                             <div class="subject"><span class="name">Sesame Pineapple</span></div>
                             <p class="description">Sautéed pineapple, onion, carrot, topped with roasted sesame seed.</p>
                             <ul class="protein">
-                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price">$16.50</span></li>
-                                <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                <li><span class="name">Beef</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price">$18.95</span></li>
-                                <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price">$18.95</span></li>
+                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price mix-veg"></span></li>
+                                <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Beef</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price sea"></span></li>
+                                <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price sea"></span></li>
                             </ul>
                         </div>
                         <div class="item">
                             <div class="subject"><span class="name">Crystal Thai Cashew</span></div>
                             <p class="description">Sautéed onion, bell pepper, celery, carrot, and cashew nuts* in our special brown sauce.</p>
-                            <p class="sub-description">*Add extra cashew nuts for $2.50</p> 
                             <ul class="protein">
-                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price">$17.95</span></li>
-                                <li><span class="name">Beef</span><span class="ellipses"></span><span class="price">$17.95</span></li>
-                                <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price">$17.95</span></li>
-                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price">$19.95</span></li>
-                                <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price">$19.95</span></li>
+                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price special-veg"></span></li>
+                                <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price special-meat"></span></li>
+                                <li><span class="name">Beef</span><span class="ellipses"></span><span class="price special-meat"></span></li>
+                                <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price special-meat"></span></li>
+                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price special-seafood"></span></li>
+                                <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price special-seafood"></span></li>
                             </ul>
+                            <p class="sub-description">*Add extra cashew nuts for <span class="extra-cashews"></span></p> 
                         </div>
                         <div class="item">
                             <div class="subject"><span class="name">Pepper Perfect</span></div>
                             <p class="description">Sautéed bell pepper, onion, carrot, and tomato in a tasty oyster sauce.</p>
                             <ul class="protein">
-                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price">$16.50</span></li>
-                                    <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Beef</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price">$18.95</span></li>
-                                    <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price">$18.95</span></li>
+                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price mix-veg"></span></li>
+                                    <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                    <li><span class="name">Beef</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                    <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                    <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price sea"></span></li>
+                                    <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price sea"></span></li>
                             </ul>
                         </div>
                         <div class="item">
                             <div class="subject"><span class="name">Sweet and Sour</span></div>
                             <p class="description">Sautéed pineapple, cucumber, tomato, bell pepper, onion, and carrot in our special house sauce.</p>
                             <ul class="protein">
-                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price">$16.50</span></li>
-                                    <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Beef</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price">$18.95</span></li>
-                                    <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price">$18.95</span></li>
+                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price mix-veg"></span></li>
+                                    <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                    <li><span class="name">Beef</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                    <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                    <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price sea"></span></li>
+                                    <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price sea"></span></li>
                             </ul>
                         </div>
                         <div class="item">
                             <div class="subject"><span class="name">Tasty Ginger</span></div>
                             <p class="description">Sautéed fresh ginger, onion, carrot, mushroom, and scallions in a brown sauce.</p>
                             <ul class="protein">
-                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price">$16.50</span></li>
-                                    <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Beef</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price">$18.95</span></li>
-                                    <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price">$18.95</span></li>
+                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price mix-veg"></span></li>
+                                    <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                    <li><span class="name">Beef</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                    <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                    <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price sea"></span></li>
+                                    <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price sea"></span></li>
                             </ul>
                         </div>
                         <div class="item">
                             <div class="subject"><span class="name">Sweet Basil (Pad Ka Prao)<span><img class="chili" alt="This item is spicy." src="../Images/chili.png"></span></span></div>
                             <p class="description">A popular Thai dish made of sautéed sweet basil, onion, and bell peppers in a brown sauce.</p>
                             <ul class="protein">
-                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price">$16.50</span></li>
-                                    <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Beef</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price">$18.95</span></li>
-                                    <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price">$18.95</span></li>
+                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price mix-veg"></span></li>
+                                    <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                    <li><span class="name">Beef</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                    <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                    <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price sea"></span></li>
+                                    <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price sea"></span></li>
                             </ul>
                         </div>
                         <div class="item">
                             <div class="subject"><span class="name">Fresh Garlic and Black Pepper</span></div>
                             <p class="description">Stir-fried in a light garlic and black pepper sauce, served on a bed of steamed broccoli.</p>
                             <ul class="protein">
-                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                    <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price">$17.95</span></li>
-                                    <li><span class="name">Beef</span><span class="ellipses"></span><span class="price">$17.95</span></li>
-                                    <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price">$17.95</span></li>
-                                    <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price">$19.95</span></li>
-                                    <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price">$19.95</span></li>
+                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price special-veg"></span></li>
+                                    <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price special-meat"></span></li>
+                                    <li><span class="name">Beef</span><span class="ellipses"></span><span class="price special-meat"></span></li>
+                                    <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price special-meat"></span></li>
+                                    <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price special-seafood"></span></li>
+                                    <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price special-seafood"></span></li>
                             </ul>
                         </div>
                     </div>
@@ -167,43 +172,44 @@
                         <div class="subject"><span class="name">Crystal Garden</span></div>
                         <p class="description">Sautéed mixed vegetables in our brown sauce.</p>
                         <ul class="protein">
-                            <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price">$16.50</span></li>
-                                <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                <li><span class="name">Beef</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price">$18.95</span></li>
-                                <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price">$18.95</span></li>
+                            <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price mix-veg"></span></li>
+                                <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Beef</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price sea"></span></li>
+                                <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price sea"></span></li>
                         </ul>
                     </div>
                     <div class="item">
                         <div class="subject"><span class="name">Pad Pik King<span><img class="chili" alt="This item is spicy." src="../Images/chili.png"></span></span></div>
                         <p class="description">Stir-fried green beans, and bell peppers in a chili paste sauce.</p>
                         <ul class="protein">
-                            <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price">$17.95</span></li>
-                                <li><span class="name">Beef</span><span class="ellipses"></span><span class="price">$17.95</span></li>
-                                <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price">$17.95</span></li>
-                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price">$19.95</span></li>
-                                <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price">$19.95</span></li>
+                            <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price special-veg"></span></li>
+                                <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price special-meat"></span></li>
+                                <li><span class="name">Beef</span><span class="ellipses"></span><span class="price special-meat"></span></li>
+                                <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price special-meat"></span></li>
+                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price special-seafood"></span></li>
+                                <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price special-seafood"></span></li>
                         </ul>
                     </div>
                     <div class="item">
                         <div class="subject"><span class="name">Crystal Thai Peanut</span></div>
                         <p class="description">Sautéed broccoli and carrot in our house peanut soy sauce.</p>
-                        <p class="sub-description">(Shrimp and Scallop are not available for this dish)</p> 
                         <ul class="protein">
-                            <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                            <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price">$17.95</span></li>
-                            <li><span class="name">Beef</span><span class="ellipses"></span><span class="price">$17.95</span></li>
-                            <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price">$17.95</span></li>
+                            <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price special-veg"></span></li>
+                            <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price special-meat"></span></li>
+                            <li><span class="name">Beef</span><span class="ellipses"></span><span class="price special-meat"></span></li>
+                            <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price special-meat"></span></li>
                         </ul>
+                        <p class="sub-description">(Shrimp and Scallop are not available for this dish)</p> 
                     </div>
                     <div class="item">
-                        <div class="subject"><span class="name">Talay Woon Sen</span><span class="ellipses"></span><span class="price">$22.95</span></div>
-                        <p class="description">Sautéed shrimp, scallops, and New Zealand mussels with mushrooms, onions, carrots, celery, and bean thread noodles.</p>
+                        <div class="subject"><span class="name">Talay Woon Sen</span><span class="ellipses"></span><span class="price talay"></span></div>
+                        <p class="description">Sautéed shrimp, scallops, and New Zealand mussels with mushrooms, onions, carrots, celery, and bean thread noodles*.</p>
+                        <p class="sub-description">*Add extra noodles for <span class="extra-noodles"></span></p> 
                     </div>
                     <div class="item">
-                        <div class="subject"><span class="name">Spicy Eggplant<span><img class="chili" alt="This item is spicy." src="../Images/chili.png"></span></span><span class="ellipses"></span><span class="price">$17.95</span></div>
+                        <div class="subject"><span class="name">Spicy Eggplant<span><img class="chili" alt="This item is spicy." src="../Images/chili.png"></span></span><span class="ellipses"></span><span class="price spicy"></span></div>
                         <p class="description">Sautéed eggplant with fresh garlic, ground chicken, onions, bell peppers in the house chili sauce.</p>
                     </div>
                     <div class="item">
@@ -216,7 +222,7 @@
                         <p class="sub-description">*Ask server for available prices</p>
                     </div>
                     <div class="item">
-                        <div class="subject"><span class="name">Grilled Salmon</span><span class="ellipses"></span><span class="price">$21.95</span></div>
+                        <div class="subject"><span class="name">Grilled Salmon</span><span class="ellipses"></span><span class="price salmon"></span></div>
                         <p class="description">Grilled salmon fillet served on a bed of broccoli with your choice of:</p>
                         <ul class="protein">
                             <li>Red curry sauce</li>
@@ -224,7 +230,7 @@
                         </ul>
                     </div>
                     <div class="item">
-                        <div class="subject"><span class="name">Eggplant Delight</span><span class="ellipses"></span><span class="price">$16.95</span></div>
+                        <div class="subject"><span class="name">Eggplant Delight</span><span class="ellipses"></span><span class="price delight"></span></div>
                         <p class="description">Sautéed eggplant with fresh garlic, onions, and bell peppers in brown sauce.</p>
                     </div>
                     </div>
@@ -237,5 +243,6 @@
             </div>
         </main>
         <footer>Copyright &#169 Tathawee Inc. <span class="year"></span></footer>
+
     </body>
 </html>

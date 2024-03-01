@@ -6,6 +6,7 @@
         <link rel="icon" type="image" href="../Images/CT_Icon.png">
         <link rel="stylesheet" href="../Assets/CSS/lunch.css">
         <script src="../Assets/JS/menu.js" defer></script>
+        <script src="../Assets/JS/salad_prices.js" defer></script>
     </head>
     <body>
         <nav>
@@ -58,40 +59,41 @@
                 <div class="food">
                     <div class="food-left">
                         <div class="item">
-                            <div class="subject"><span class="name">Nam Sod <span class="item-note">(chicken)</span><span><img alt="This item is spicy." class="chili" src="../Images/chili.png"></span></span><span class="ellipses"></span><span class="price">$10.95</span></div>
+                            <div class="subject"><span class="name">Nam Sod <span class="item-note">(chicken)</span><span><img alt="This item is spicy." class="chili" src="../Images/chili.png"></span></span><span class="ellipses"></span><span class="price nam"></span></div>
                             <p class="description">Ground chicken mixed with fresh ginger, red onions, Thai spices, and lime juice, topped with oasted peanuts on a bed of lettuce.</p>
                         </div>
                         <div class="item">
-                            <div class="subject"><span class="name">Beef Salad<span><img alt="This item is spicy." class="chili" src="../Images/chili.png"></span></span><span class="ellipses"></span><span class="price">$10.95</span></div>
+                            <div class="subject"><span class="name">Beef Salad<span><img alt="This item is spicy." class="chili" src="../Images/chili.png"></span></span><span class="ellipses"></span><span class="price beef"></span></div>
                             <p class="description">Sliced beef mixed with Thai spices, red onions, and lime juice, served on a bed of lettuce and shredded carrot with sliced cucumber when available.</p>
                         </div>
                         <div class="item">
-                            <div class="subject"><span class="name">Seafood Salad<span><img alt="This item is spicy." class="chili" src="../Images/chili.png"></span></span><span class="ellipses"></span><span class="price">$12.95</span></div>
+                            <div class="subject"><span class="name">Seafood Salad<span><img alt="This item is spicy." class="chili" src="../Images/chili.png"></span></span><span class="ellipses"></span><span class="price seafood"></span></div>
                             <p class="description">Steamed combination of shrimp and scallop in Thai spices and lime juice, served on a bed of shredded carrot and lettuce.</p>
                         </div>
                         <div class="item">
-                            <div class="subject"><span class="name">Yum Woon Sen<span><img alt="This item is spicy." class="chili" src="../Images/chili.png"></span></span><span class="ellipses"></span><span class="price">$10.95</span></div>
+                            <div class="subject"><span class="name">Yum Woon Sen<span><img alt="This item is spicy." class="chili" src="../Images/chili.png"></span></span><span class="ellipses"></span><span class="price yum"></span></div>
                             <p class="description">Spicy bean thread noodles with chicken, red onions, lime juice and Thai spices served on a bed of shredded carrot and lettuce.</p>
                         </div>
                         <div class="item">
-                            <div class="subject"><span class="name">Crystal Thai Goong<span><img alt="This item is spicy." class="chili" src="../Images/chili.png"></span></span><span class="ellipses"></span><span class="price">$11.95</span></div>
+                            <div class="subject"><span class="name">Crystal Thai Goong<span><img alt="This item is spicy." class="chili" src="../Images/chili.png"></span></span><span class="ellipses"></span><span class="price goong"></span></div>
                             <p class="description">Grilled shrimp seasoned with fresh garlic, chili, lime juice, red onions, served on a bed of lettuce.</p>
                         </div>
                         <div class="item">
-                            <div class="subject"><span class="name">Peanut Salad*</span><span class="ellipses"></span><span class="price">$7.95</span></div>
-                            <p class="description">Tomato, red onion, and green onion on a bed of shredded carrot and lettuce, served with a house-made peanut dressing and cucumber when available. </p>
-                            <p class="sub-description">*Extra dressing $0.50 per take-out sauce container</p>
+                            <div class="subject"><span class="name">Peanut Salad</span><span class="ellipses"></span><span class="price peanut"></span></div>
+                            <p class="description">Tomato, red onion, and green onion on a bed of shredded carrot and lettuce, served with a house-made peanut dressing* and cucumber when available. </p>
+                            <p class="sub-description">*Extra dressing <span class="dressing"></span> per take-out sauce container</p>
                         </div>
                         <div class="item">
-                            <div class="subject"><span class="name">Larb Kai<span><img alt="This item is spicy." class="chili" src="../Images/chili.png"></span></span><span class="ellipses"></span><span class="price">$8.95</span></div>
+                            <div class="subject"><span class="name">Larb Kai<span><img alt="This item is spicy." class="chili" src="../Images/chili.png"></span></span><span class="ellipses"></span><span class="price kai"></span></div>
                             <p class="description">Ground white meat chicken, mixed with a flavorful blend of Thai herbs and roasted rice, red onions, chili, and lime juice, served on a bed of shredded carrot and lettuce.</p>
                         </div>
                         <div class="item">
                             <div class="subject"><span class="name">Som Tum<span><img alt="This item is spicy." class="chili" src="../Images/chili.png"></span></span></div>
                             <p class="description">Traditional Thai salad of green papaya, carrot, and tomato mixed with lime juice, Thai chili, topped with roasted peanuts and grilled shrimp or fried tofu.</p>
                             <ul class="protein">
-                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price">$11.95</span></li>
-                                <li><span class="name">Tofu <span class="item-note">(vegan)</span></span><span class="ellipses"></span><span class="price">$8.95</span></li>
+                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price shrimp-som"></span></li>
+                                <li><span class="name">Tofu <span class="item-note">(vegan)</span></span><span class="ellipses"></span><span class="price vegan-som"></span></li>
+                                <li><span class="name">Plain <span class="item-note">(vegan)</span></span><span class="ellipses"></span><span class="price vegan-som"></span></li>
                             </ul> 
                         </div>
                     </div>

@@ -13,7 +13,7 @@ closeButton.addEventListener('click', () => {
     popup.style.display = 'none';
 });
 
-/* Slide modal onto the screen */
+/* Allow modal to appear on screen after a delay */
 
 document.addEventListener("DOMContentLoaded", () => {
     setTimeout(function() {

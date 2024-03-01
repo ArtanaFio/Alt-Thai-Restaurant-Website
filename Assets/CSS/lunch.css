@@ -196,6 +196,10 @@ main {
     display: flex;
 }
 
+.unused {
+    display: none;
+}
+
 .dots {
     flex: 1;
     border-bottom: 3.5px dotted brown;

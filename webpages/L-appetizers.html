@@ -6,6 +6,7 @@
         <link rel="icon" type="image" href="../Images/CT_Icon.png">
         <link rel="stylesheet" href="../Assets/CSS/lunch.css">
         <script src="../Assets/JS/menu.js" defer></script>
+        <script src="../Assets/JS/appetizer_prices.js" defer></script>
     </head>
     <body>
         <nav>
@@ -27,7 +28,7 @@
         <main>
             <div class="header">
                 <h1 class="heading">Appetizers</h1>
-                <div class="header-note">Extra dipping sauce $0.50 each</div>
+                <div class="header-note">Extra dipping sauce <span class="dipping"></span> each</div>
             </div>
             <div class="text">
                 <div class="menu-note">
@@ -59,46 +60,44 @@
                 <div class="food">
                     <div class="food-left">
                         <div class="item">
-                            <div class="subject"><span class="name">Veggie Spring Rolls* <span class="item-note">(3)</span></span><span class="ellipses"></span><span class="price">$5.95</span></div>
+                            <div class="subject"><span class="name">Veggie Spring Rolls* <span class="item-note">(3)</span></span><span class="ellipses"></span><span class="price spring"></span></div>
                             <p class="description">Three crispy rolls filled with bean thread noodles, cabbage, and carrots, served with house-made sweet and sour sauce.</p>
                             <p class="sub-description">*Vegan</p>
                         </div>
                         <div class="item">
-                            <div class="subject"><span class="name">Tod Mun <span class="item-note">(5)</span><span><img class="chili" alt="This item is spicy." src="../Images/chili.png"></span></span><span class="ellipses"></span><span class="price">$7.95</span></div>
+                            <div class="subject"><span class="name">Tod Mun <span class="item-note">(5)</span><span><img class="chili" alt="This item is spicy." src="../Images/chili.png"></span></span><span class="ellipses"></span><span class="price tod"></span></div>
                             <p class="description">Fish patties blended with red curry paste and deep-fried, served with cucumber dip.</p>
                         </div>
                         <div class="item">
-                            <div class="subject"><span class="name">Fried Tofu</span><span class="ellipses"></span><span class="price">$5.95</span></div>
+                            <div class="subject"><span class="name">Fried Tofu</span><span class="ellipses"></span><span class="price fried-tofu"></span></div>
                             <p class="description">Crispy bean curd served with house-made sweet and sour sauce topped with crushed peanuts.</p>
                         </div>
-                        <!--This item temporarily discontinued
-
                             <div class="item">
-                            <div class="subject"><span class="name">Bang Bang Potstickers</span><span class="ellipses"></span><span class="price">$6.75</span></div>
+                            <div class="subject"><span class="name">Bang Bang Potstickers</span><span class="ellipses"></span><span class="price potstickers"></span></div>
                             <p class="description">Crispy dumplings filled with chicken and veggie, served with a spicy sweet dipping sauce.</p>
-                        </div>-->
+                        </div>
                         <div class="item">
-                            <div class="subject"><span class="name">Curry Puffs <span class="item-note">(2)</span></span><span class="ellipses"></span><span class="price">$7.50</span></div>
+                            <div class="subject"><span class="name">Curry Puffs <span class="item-note">(2)</span></span><span class="ellipses"></span><span class="price puff"></span></div>
                             <p class="description">Two crispy pastries filled with potato, onion, and either chicken or veggies, served with cucumber dip.</p>
                             <p class="sub-description">*Filling is subject to change depending on availability of ingredients</p>
                         </div>
                         <div class="item">
-                            <div class="subject"><span class="name">Shrimp Spring Rolls <span class="item-note">(3)</span></span><span class="ellipses"></span><span class="price">$7.50</span></div>
+                            <div class="subject"><span class="name">Shrimp Spring Rolls <span class="item-note">(3)</span></span><span class="ellipses"></span><span class="price shrimp-roll"></span></div>
                             <p class="description">Crispy rolls filled with shrimp and vegetables, served with our house-made sweet and sour sauce.</p>
                             <p class="sub-description">*Ask server for availability</p>
                         </div> 
                     </div>
                     <div class="food-right">
                         <div class="item">  
-                            <div class="subject"><span class="name">Steamed Chicken Dumplings <span class="item-note">(5)</span></span><span class="ellipses"></span><span class="price">$7.95</span></div>
+                            <div class="subject"><span class="name">Steamed Chicken Dumplings <span class="item-note">(5)</span></span><span class="ellipses"></span><span class="price steam"></span></div>
                             <p class="description">Ground chicken and green onion filling wrapped in wonton, served with house-made soy vinaigrette sauce topped with fried garlic.</p>
                         </div> 
                         <div class="item">   
-                            <div class="subject"><span class="name">Chicken Satay <span class="item-note">(4)</span></span><span class="ellipses"></span><span class="price">$9.00</span></div>
+                            <div class="subject"><span class="name">Chicken Satay <span class="item-note">(4)</span></span><span class="ellipses"></span><span class="price satay"></span></div>
                             <p class="description">Skewered chicken first marinated in a mixture of Thai spices and coconut milk, then grilled. Served with special house-made peanut sauce and cucumber dip.</p>
                         </div>  
                         <div class="item">  
-                            <div class="subject"><span class="name">Coconut Shrimp* <span class="item-note">(5)</span></span><span class="ellipses"></span><span class="price">$10.95</span></div>
+                            <div class="subject"><span class="name">Coconut Shrimp* <span class="item-note">(5)</span></span><span class="ellipses"></span><span class="price coconut"></span></div>
                             <p class="description">Shrimp lightly battered in coconut flakes and deep-fried, served with our house-made sweet and sour sauce.</p> 
                             <p class="sub-description">*Ask server for availability</p>
                         </div>
@@ -107,9 +106,9 @@
                             <p class="description">Refreshing lettuce, cilantro, cucumber, carrot, and rice noodles wrapped in a thin rice paper. Served with house-made smooth peanut sauce and spicy ginger soy sauce.</p>
                             <p class="sub-description">*Made fresh to order, might take some time</p>
                                 <ul class="protein">
-                                    <li><span>Shrimp</span><span class="ellipses"></span><span class="price">$9.95</span></li>
-                                    <li><span>Tofu (vegan)</span><span class="ellipses"></span><span class="price">$8.95</span></li>
-                                    <li><span>Plain (vegan)</span><span class="ellipses"></span><span class="price">$8.95</span></li>
+                                    <li><span>Shrimp</span><span class="ellipses"></span><span class="price summer"></span></li>
+                                    <li><span>Tofu (vegan)</span><span class="ellipses"></span><span class="price vegan-summer"></span></li>
+                                    <li><span>Plain (vegan)</span><span class="ellipses"></span><span class="price vegan-summer"></span></li>
                                 </ul>
                         </div>
                     </div>

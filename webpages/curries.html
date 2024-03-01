@@ -6,6 +6,8 @@
         <link rel="icon" type="image" href="../Images/CT_Icon.png">
         <link rel="stylesheet" href="../Assets/CSS/dinner.css">
         <script src="../Assets/JS/menu.js" defer></script>
+        <script src="../Assets/JS/add-on_prices.js" defer></script>
+        <script src="../Assets/JS/dinner_entree_prices.js" defer></script>
     </head>
     <body>
         <nav>
@@ -61,16 +63,14 @@
                 </div>
                 <div class="menu-note">
                     <p>Items with mixed vegetables or tofu are made with vegan sauce unless otherwise requested.</p>
-                    <p>All entrees are served with quality white jasmine rice. <span class="substitute-noodles">$1.00</span> upcharge to substitute with rice noodles. Cannot substitute with fried rice.</p>
+                    <p>All entrees are served with quality white jasmine rice. <span class="sub-noodles"></span> upcharge to substitute with rice noodles. Cannot substitute with fried rice.</p>
                     <p class="p2">Cost of adding:</p>
                     <ul class="extra-cost">
-                        <li class="extra-meat"><span class="extra">Extra chicken or beef</span><span class="dots"></span><span class="upcharge">$3.50</span></li>
-                        <li class="extra-shrimp"><span class="extra">Extra shrimp</span><span class="dots"></span><span class="upcharge">$5.00</span></li>
-                        <li class="extra-scallop"><span class="extra">Extra scallop</span><span class="dots"></span><span class="upcharge">$6.00</span></li>
-                        <li class="extra-tofu"><span class="extra">Extra tofu</span><span class="dots"></span><span class="upcharge">$3.00</span></li>
-                        <li class="extra-rice"><span class="extra">Extra jasmine rice</span><span class="dots"></span><span class="upcharge">$2.50</span></li>
-                        <li class="extra-egg"><span class="extra">Extra egg</span><span class="dots"></span><span class="upcharge">$1.25</span></li>
-                        <li class="extra-noodles"><span class="extra">Extra noodles</span><span class="dots"></span><span class="upcharge">$3.00</span></li>
+                        <li><span class="extra">Extra chicken or beef</span><span class="dots"></span><span class="upcharge extra-meat"></span></li>
+                        <li><span class="extra">Extra shrimp</span><span class="dots"></span><span class="upcharge extra-shrimp"></span></li>
+                        <li><span class="extra">Extra scallop</span><span class="dots"></span><span class="upcharge extra-scallop"></span></li>
+                        <li><span class="extra">Extra tofu</span><span class="dots"></span><span class="upcharge extra-tofu"></span></li>
+                        <li><span class="extra">Extra jasmine rice</span><span class="dots"></span><span class="upcharge extra-rice"></span></li>
                     </ul>
                 </div>
                 <div class="food">
@@ -79,49 +79,49 @@
                             <div class="subject"><span class="name">Red Curry<span><img class="chili" alt="This item is spicy." src="../Images/chili.png"></span></span></div>
                             <p class="description">Red curry paste cooked in coconut milk with bell pepper, bamboo shoot, and sweet basil.</p>
                             <ul class="protein">
-                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price">$16.50</span></li>
-                                <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                <li><span class="name">Beef</span><span class="ellipses"></span><span class="prices">$16.95</span></li>
-                                <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price">$18.95</span></li>
-                                <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price">$18.95</span></li>
-                            </ul> 
+                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price mix-veg"></span></li>
+                                <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Beef</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price sea"></span></li>
+                                <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price sea"></span></li>
+                            </ul>
                         </div>
                         <div class="item">
-                            <div class="name">Green Curry<span><img class="chili" alt="This item is spicy." src="../Images/chili.png"></span></div>
+                            <div class="subject"><span class="name">Green Curry<span><img class="chili" alt="This item is spicy." src="../Images/chili.png"></span></span></div>
                             <p class="description">Green curry paste cooked in coconut milk with bell pepper, eggplant, and sweet basil. Subtly spicier than the other curries.</p>
                             <ul class="protein">
-                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price">$16.50</span></li>
-                                <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                <li><span class="name">Beef</span><span class="ellipses"></span><span class="prices">$16.95</span></li>
-                                <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price">$18.95</span></li>
-                                <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price">$18.95</span></li>
-                            </ul> 
+                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price mix-veg"></span></li>
+                                <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Beef</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price sea"></span></li>
+                                <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price sea"></span></li>
+                            </ul>
                         </div>
                         <div class="item">
-                            <div class="name">Panang Curry<span><img class="chili" alt="This item is spicy." src="../Images/chili.png"></span></div>
+                            <div class="subject"><span class="name">Panang Curry<span><img class="chili" alt="This item is spicy." src="../Images/chili.png"></span></span></div>
                             <p class="description">Panang curry paste cooked in coconut milk with peanut sauce, crushed peanuts, bell pepper, sweet basil, and kaffir leaves.</p>
                             <ul class="protein">
-                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price">$16.50</span></li>
-                                <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                <li><span class="name">Beef</span><span class="ellipses"></span><span class="prices">$16.95</span></li>
-                                <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price">$18.95</span></li>
-                                <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price">$18.95</span></li>
-                            </ul> 
+                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price mix-veg"></span></li>
+                                <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Beef</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price sea"></span></li>
+                                <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price sea"></span></li>
+                            </ul>
                         </div>
                         <div class="item">
-                            <div class="name">Massaman Curry</div>
+                            <div class="subject"><span class="name">Massaman Curry</span></div>
                             <p class="description">Massaman curry paste cooked in coconut milk with potato, onions, and whole roasted peanuts.</p>
                             <ul class="protein">
-                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price">$16.50</span></li>
-                                <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                <li><span class="name">Beef</span><span class="ellipses"></span><span class="prices">$16.95</span></li>
-                                <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price">$16.95</span></li>
-                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price">$18.95</span></li>
-                                <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price">$18.95</span></li>
-                            </ul> 
+                                <li><span class="name">Mixed Vegetables</span><span class="ellipses"></span><span class="price mix-veg"></span></li>
+                                <li><span class="name">Chicken</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Beef</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Tofu</span><span class="ellipses"></span><span class="price meat"></span></li>
+                                <li><span class="name">Shrimp</span><span class="ellipses"></span><span class="price sea"></span></li>
+                                <li><span class="name">Scallop</span><span class="ellipses"></span><span class="price sea"></span></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
