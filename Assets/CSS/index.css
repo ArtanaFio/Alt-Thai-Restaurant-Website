@@ -241,14 +241,14 @@ p {
     border: 10px double orange;
     box-shadow: 0.25vmin 0.25vmin 1vmin #c59100;
 }
-
+/* Use for special hours on holidays, etc.
 .schedule p:first-of-type {
     font-weight: bold;
     font-size: 1.3rem;
     background-color: orange;
     border-radius: 10px;
 }
-
+*/
 .schedule p:first-of-type span {
     text-decoration: underline;
     color: white;
