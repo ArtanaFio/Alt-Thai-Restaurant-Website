@@ -18,22 +18,20 @@ body {
     border: 3vmin double orange;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
-
 
 .modal {
     position: absolute;
-    top: 15vh;
+    width: 100%;
+    height: 100%;
+    top: 0;
     align-self: center;
-    background-color: transparent;
-    background-image: url("../../Images/lunch_combo_special_flyer.png");
+    background-image: url("../../Images/correct_specials_2024.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 1vmin;
-    margin: 5vmin;
-    width: 100%;
-    height: 80%;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .modal-content {
@@ -45,38 +43,29 @@ body {
 }
 
 .close {
-    font-size: 2rem;
-    cursor: pointer;
-    align-self: flex-end;
-    color: white;
-    background-color: rgb(255, 136, 0);
-    box-shadow: 2px 2px 10px brown;
-    border: 2px solid brown;
-    border-radius: 10px;
     width: 2rem;
     height: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
+    align-self: flex-end;
     margin: 0;
-    margin-right: 2rem;
+    margin-right: 25%;
     padding: 0;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(255, 136, 0);
+    border: 2px solid brown;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px brown;
 }
 
 .close:hover {
     color: rgb(255, 136, 0);
     background-color: white;
     border-color: transparent;
-}
-
-.modal-content img {
-    color: black;
-    font-size: 0.75rem;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-    height: auto;
-    display: none;
 }
 
 nav {

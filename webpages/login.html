@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Login</title>
+    <link rel="stylesheet" href="../Assets/CSS/login.css">
+</head>
+<body>
+    <article>
+        <section id="transparent-side">
+            <div id="logo">
+                <img src="../Images/Clear CT Logo.png" alt="Crystal Thai: Authentic Thai Cuisine">
+            </div>
+            <footer>Created by Niada &copy; 2024</footer> 
+        </section>
+        <section id="form-side">
+            <form>
+                <div id="jargon" class="undertone">
+                    <p>Enter username and password to unlock price changes.</p>
+                </div>
+                <div id="dataset">
+                    <h1>Enter credentials:</h1>
+                    <fieldset>
+                        <div>
+                            <p>
+                                <label for="user-name">Username:<span aria-label="required">*</label>
+                                <input type="text" id="user-name" name="username" minlength="3" maxlength="15" placeholder="username" required />
+                            </p>
+                            <p>
+                                <label for="pwd">PASSWORD<span aria-label="required">*</label>
+                                <input type="password" id="pwd" name="user_password" placeholder="password" required />
+                            </p>
+                        </div>
+                        <button type="submit">Login</button>
+                    </fieldset>
+                </div>
+                <div id="login" class="undertone"></div>
+            </form>
+        </section>
+    </article>
+</body>
+</html>
