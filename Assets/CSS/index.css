@@ -22,7 +22,7 @@ body {
 
 .modal {
     display: none;
-    position: absolute;
+    position: fixed;
     align-self: center;
     align-items: center;
     justify-content: center;
@@ -32,11 +32,6 @@ body {
     padding: 0;
     top: 0;
     background-color: rgba(0, 0, 0, 0.75);
-    /*box-shadow: 5px 5px 10px brown;
-    width: 90vw;
-    height: 95vh;
-    padding: 5vmin;
-    overflow: hidden;*/
 }
 
 .modal-content {
