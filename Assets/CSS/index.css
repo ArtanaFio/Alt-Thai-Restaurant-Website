@@ -24,12 +24,19 @@ body {
     display: none;
     position: absolute;
     align-self: center;
-    background-color: rgb(255, 247, 232);
-    box-shadow: 5px 5px 10px brown;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    /*box-shadow: 5px 5px 10px brown;
     width: 90vw;
     height: 95vh;
     padding: 5vmin;
-    overflow: hidden;
+    overflow: hidden;*/
 }
 
 .modal-content {
@@ -37,36 +44,53 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: rgb(255, 247, 232);
+    width: 75%;
+    padding: 5vmin;
 }
 
 .close {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
     font-size: 2rem;
     cursor: pointer;
-    align-self: flex-end;
 }
 
 .close:hover {
     color: orange;
 }
 
+.modal-content h1 {
+    font-size: 1.5rem;
+    background-color: transparent;
+    text-shadow: 0.25vmin 0.1vmin 3px rgb(216, 104, 0);
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 27px;
+    margin-top: -0.5rem;
+}
+
+.special {
+    width: auto;
+    height: 30vh;
+    border-radius: 10px;
+    box-shadow: 7px 7px 20px orange, -7px 7px 20px orange, 7px -7px 20px orange, -7px -7px 20px orange;
+}
+
+
 .close, .modal-content p {
     color:rgb(209, 102, 1);
     font-weight: bold;
 }
 
-.spring-rolls {
-    width: 25vw;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 7px 7px 20px orange, -7px 7px 20px orange, 7px -7px 20px orange, -7px -7px 20px orange;
+.modal-content p {
+    font-size: 0.75rem;
+    margin-bottom: 0;
 }
 
-.modal-content h1 {
-    font-size: 7vmin;
-    background-color: transparent;
-    text-shadow: 0.25vmin 0.1vmin 3px rgb(216, 104, 0);
-    padding: 0;
-    margin-top: -0.5rem;
+.underline {
+    text-decoration: underline;
 }
 
 nav {
@@ -436,26 +460,17 @@ details > p > a:hover {
     body {
         border: none;
     }
-    .modal {
+    .modal-content {
         margin: 0;
         padding: 0;
+        width: 95%;
     }
     .modal-content h1 {
-        font-size: 1.15rem;
-        margin: 0.75rem;
-        margin-top: -0.5rem;
-    }
-    .spring-rolls {
-        width: 275px;
-        height: auto;
-        margin-bottom: 0;
+        font-size: 1rem;
     }
     .modal-content p {
-        margin-top: 0.75rem;
-        font-size: 0.8rem;
-    }
-    .close {
-        margin-right: 0.5rem;
+        margin-left: 0;
+        margin-right: 0;
     }
     nav {
         top: 0;

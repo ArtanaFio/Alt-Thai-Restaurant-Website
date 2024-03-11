@@ -35,11 +35,22 @@ faqLink.addEventListener('click', () => {
 
 head.appendChild(tab);
 
+
 /* Automatically update copyright year */
 
 const copyrightYear = document.querySelector(".year");
 
 copyrightYear.textContent = new Date().getFullYear();
+
+
+/* Slide modal onto the screen */
+
+document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(function() {
+        popup.style.display = "flex";
+    }, 1000);
+});
+
 
 /* Remove modal from screen */
 
@@ -48,12 +59,4 @@ const closeButton = document.querySelector(".close");
 
 closeButton.addEventListener('click', () => {
     popup.style.display = 'none';
-});
-
-/* Slide modal onto the screen */
-
-document.addEventListener("DOMContentLoaded", () => {
-    setTimeout(function() {
-        popup.style.display = "block";
-    }, 1000);
 });
